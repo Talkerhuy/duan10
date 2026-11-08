@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="services.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo shop -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <img src="./img/logo.png" alt="Logo Shop Vợt Cầu Lông" />
+          </span>
+          <span class="logo-text">
+            BADMINTON<span class="logo-accent">.</span>
+          </span>
+        </a>
+        <!-- Nút hamburger  mobile -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tư vấn vợt</a></li>
+            <li><a href="guide.html">Tư vấn căng dây</a></li>
+            <li>
+              <a href="services.html" class="active">Quần & áo thể thao</a>
+            </li>
+            <li><a href="shoes.html">Giày & phụ kiện</a></li>
+
+            <li><a href="warranty.html">Bảo hành</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO SECTION / GIỚI THIỆU TỔNG QUAN ================= -->
+    <section class="hero-wrapper">
+      <div class="hero-container">
+        <!-- Cột trái: Khối nội dung chữ (Bay nguyên khối từ trái sang) -->
+        <div
+          class="hero-content animate-on-scroll"
+          style="transform: translateX(-50px); animation-delay: 0.1s"
+        >
+          <span class="hero-badge">PRECISION STRINGING & SERVICE</span>
+          <h1>
+            Nghệ Thuật Đan Vợt <span class="text-gradient">Đỉnh Cao</span>
+          </h1>
+          <p>
+            Hệ thống máy đan điện tử tự động chuẩn xác từng 0.1 lbs. Tư vấn
+            chuyên sâu thông số kỹ thuật tối ưu theo cổ tay và lối đánh của bạn.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn-hero-solid">Khám phá dịch vụ</a>
+            <a href="#" class="btn-hero-outline">Xem bảng giá</a>
+          </div>
+
+          <!-- Thống kê nhanh -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>1.500+</h3>
+              <p>Vợt hoàn thiện</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Chính hãng chuẩn ISO</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <h3>0.1 lbs</h3>
+              <p>Dung sai cực thấp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột phải: Khối Đan Cước 3D Công Nghệ Cao (Bay nguyên khối từ phải sang) -->
+        <div
+          class="hero-media animate-on-scroll"
+          style="transform: translateX(50px); animation-delay: 0.25s"
+        >
+          <div class="racket-lab-hub">
+            <!-- Vòng xoay nét đứt bên ngoài -->
+            <div class="ring-outer-spin"></div>
+
+            <!-- Vòng thông số 360 độ -->
+            <div class="ring-orbit-stats">
+              <span class="orbit-badge badge-top">NoMo</span>
+              <span class="orbit-badge badge-bottom">NoMo</span>
+            </div>
+
+            <!-- Khối trung tâm mô phỏng mặt lưới đan vợt -->
+            <div class="string-core-circle">
+              <!-- Đường lưới đan cước chéo -->
+              <div class="string-grid-overlay"></div>
+
+              <!-- Nội dung chính ở tâm -->
+              <div class="core-brand-box">
+                <span class="lab-tag">BADMINTON</span>
+                <h4>PRO STRING LAB</h4>
+                <div class="tension-pulse">24-30 LBS</div>
+              </div>
+            </div>
+
+            <!-- Vệt sáng phản chiếu (Glow Effect) -->
+            <div class="hub-cyber-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APPAREL & SPORTSWEAR SECTION ================= -->
+    <section class="apparel-main-wrapper">
+      <div class="apparel-main-container">
+        <!-- Tiêu đề: Thả nhẹ nhàng từ trên xuống -->
+        <div
+          class="section-header text-center animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="section-badge">SPORTSWEAR COLLECTION</span>
+          <h2>Thời Trang & Áo Thể Thao Cầu Lông</h2>
+          <p>
+            Chất liệu thun lạnh dệt micro-mesh cao cấp, co giãn 4 chiều, thoát
+            khí nhanh giúp cơ thể luôn khô thoáng
+          </p>
+        </div>
+
+        <!-- Lưới sản phẩm thời trang -->
+        <div class="apparel-main-grid">
+          <!-- Sản phẩm 1: Áo đấu Yonex Pro (Bay từ trái sang) -->
+          <div
+            class="apparel-card-item animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="item-badge">NEW ARRIVAL</div>
+            <div class="item-visual-box">
+              <img
+                src="./img/ao1.png"
+                alt="Áo Cầu Lông Yonex Carbon Dry"
+                class="product-img"
+              />
+              <span class="item-series-code">YONEX-PRO-2026</span>
+            </div>
+            <div class="item-details">
+              <span class="item-category-tag">ÁO ĐẤU CHÍNH HÃNG</span>
+              <h3>Áo Cầu Lông Yonex Carbon Dry</h3>
+              <p class="item-features">
+                Công nghệ Very Cool giảm 3°C nhiệt độ cơ thể khi vận động mạnh.
+              </p>
+              <div class="item-price-action">
+                <div class="price-stack">
+                  <span class="price-main">290.000₫</span>
+                  <span class="price-del">350.000₫</span>
+                </div>
+                <a href="#" class="btn-apparel-action">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sản phẩm 2: Set Bộ Lining (Nổi bật - Phóng to nhẹ từ dưới lên) -->
+          <div
+            class="apparel-card-item featured-item animate-on-scroll"
+            style="
+              transform: scale(0.9) translateY(40px);
+              animation-delay: 0.3s;
+            "
+          >
+            <div class="item-badge highlight-badge">BEST SELLER</div>
+            <div class="item-visual-box">
+              <img
+                src="./img/ao2.webp"
+                alt="Bộ Quần Áo Lining Pro Tournament"
+                class="product-img"
+              />
+              <span class="item-series-code">LINING-TEAM-KIT</span>
+            </div>
+            <div class="item-details">
+              <span class="item-category-tag highlight-tag"
+                >SET THI ĐẤU ĐỘI TUYỂN</span
+              >
+              <h3>Bộ Quần Áo Lining Pro Tournament</h3>
+              <p class="item-features">
+                Sợi dệt kháng khuẩn, chống bám mùi, thiết kế form athletic gọn
+                gàng.
+              </p>
+              <div class="item-price-action">
+                <div class="price-stack">
+                  <span class="price-main">420.000₫</span>
+                  <span class="price-del">500.000₫</span>
+                </div>
+                <a href="#" class="btn-apparel-action solid-btn"
+                  >Chọn mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Sản phẩm 3: Quần Short Victor (Bay từ phải sang) -->
+          <div
+            class="apparel-card-item animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.4s"
+          >
+            <div class="item-badge">PRO SHORT</div>
+            <div class="item-visual-box">
+              <img
+                src="./img/ao3.jpeg"
+                alt="Quần Short Victor Motion Flex"
+                class="product-img"
+              />
+              <span class="item-series-code">VICTOR-FLEX-03</span>
+            </div>
+            <div class="item-details">
+              <span class="item-category-tag">QUẦN SHORT THỂ THAO</span>
+              <h3>Quần Short Victor Motion Flex</h3>
+              <p class="item-features">
+                Túi khóa xẻ hông tiện lợi, đai lưng co giãn siêu êm không gây
+                hằn da.
+              </p>
+              <div class="item-price-action">
+                <div class="price-stack">
+                  <span class="price-main">180.000₫</span>
+                  <span class="price-del">230.000₫</span>
+                </div>
+                <a href="#" class="btn-apparel-action">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT DETAIL MODAL ================= -->
+    <div class="product-modal-overlay" id="productModalOverlay"></div>
+
+    <div class="product-modal-container" id="productModal">
+      <button class="btn-close-modal" id="btnCloseModal">&times;</button>
+
+      <div class="modal-grid-content">
+        <div class="modal-img-box">
+          <span class="modal-badge-tag">CHÍNH HÃNG PRO LAB</span>
+          <img
+            id="modalProductImg"
+            src=""
+            alt="Product Image"
+            class="modal-img"
+          />
+        </div>
+
+        <div class="modal-info-box">
+          <span id="modalProductSeries" class="modal-series">CODE-000</span>
+          <h2 id="modalProductTitle">Tên Sản Phẩm</h2>
+
+          <div class="modal-price-wrap">
+            <span id="modalProductPrice" class="price-main">0₫</span>
+            <span id="modalProductOldPrice" class="price-del">0₫</span>
+          </div>
+
+          <p id="modalProductDesc" class="modal-desc">
+            Mô tả chi tiết tính năng công nghệ của sản phẩm.
+          </p>
+
+          <div class="modal-size-selection">
+            <span class="size-label">CHỌN KÍCH THƯỚC (SIZE)</span>
+            <div class="size-options-grid">
+              <button class="size-btn">S</button>
+              <button class="size-btn active">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+            </div>
+          </div>
+
+          <button class="btn-add-to-cart-modal" id="btnAddCartModal">
+            Thêm Vào Giỏ Hàng Hỏa Tốc
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SIZE GUIDE SECTION ================= -->
+    <section class="size-guide-wrapper">
+      <div class="size-guide-container">
+        <!-- Tiêu đề: Thả nhẹ từ trên xuống -->
+        <div
+          class="section-header text-center animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="section-badge">FITTING CHART</span>
+          <h2>Bảng Hướng Dẫn Chọn Size Trang Phục</h2>
+          <p>
+            Thông số kích thước chuẩn được tối ưu riêng cho form người Việt Nam
+            khi vận động thi đấu cường độ cao
+          </p>
+        </div>
+
+        <!-- Bảng thông số: Bay nguyên khối lớn từ trái sang -->
+        <div
+          class="size-table-card animate-on-scroll"
+          style="transform: translateX(-40px); animation-delay: 0.25s"
+        >
+          <div class="table-responsive">
+            <table class="size-table">
+              <thead>
+                <tr>
+                  <th>SIZE</th>
+                  <th>CHIỀU CAO (CM)</th>
+                  <th>CÂN NẶNG (KG)</th>
+                  <th>VÒNG NGỰC (CM)</th>
+                  <th>ĐỘ DÀI ÁO (CM)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="size-tag">S</span></td>
+                  <td>155 - 165 cm</td>
+                  <td>48 - 56 kg</td>
+                  <td>84 - 88 cm</td>
+                  <td>66 cm</td>
+                </tr>
+                <tr class="featured-row">
+                  <td><span class="size-tag highlight">M</span></td>
+                  <td>165 - 172 cm</td>
+                  <td>57 - 65 kg</td>
+                  <td>88 - 92 cm</td>
+                  <td>68 cm</td>
+                </tr>
+                <tr>
+                  <td><span class="size-tag">L</span></td>
+                  <td>170 - 177 cm</td>
+                  <td>66 - 74 kg</td>
+                  <td>92 - 96 cm</td>
+                  <td>70 cm</td>
+                </tr>
+                <tr>
+                  <td><span class="size-tag">XL</span></td>
+                  <td>175 - 182 cm</td>
+                  <td>75 - 83 kg</td>
+                  <td>96 - 100 cm</td>
+                  <td>72 cm</td>
+                </tr>
+                <tr>
+                  <td><span class="size-tag">XXL</span></td>
+                  <td>> 180 cm</td>
+                  <td>84 - 92 kg</td>
+                  <td>100 - 106 cm</td>
+                  <td>74 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Khối mẹo chọn size nhanh: Bay nguyên khối từ phải sang -->
+        <div
+          class="size-tips-grid animate-on-scroll"
+          style="transform: translateX(40px); animation-delay: 0.4s"
+        >
+          <div class="tip-card">
+            <div class="tip-dot"></div>
+            <div>
+              <h4>Form Áo Thi Đấu (Athletic Fit)</h4>
+              <p>
+                Nếu bạn thích mặc ôm nhẹ người để bứt tốc linh hoạt, hãy chọn
+                đúng size theo bảng trên.
+              </p>
+            </div>
+          </div>
+
+          <div class="tip-card">
+            <div class="tip-dot"></div>
+            <div>
+              <h4>Thích Mặc Rộng Thoải Mái?</h4>
+              <p>
+                Nếu bạn có khung vai rộng hoặc thích mặc thoải mái khi đánh đôi,
+                hãy tăng lên 1 size nhé.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING & ORDER APPAREL FORM ================= -->
+    <section class="apparel-booking-wrapper">
+      <div class="apparel-booking-container">
+        <div class="booking-card-grid">
+          <!-- Cột trái: Thông tin ưu đãi / Lợi ích (Bay từ trái sang) -->
+          <div
+            class="booking-info-side animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.1s"
+          >
+            <span class="section-badge light">EASY ORDER & FITTING</span>
+            <h2>Đặt Lịch Thử & Mua Quần Áo Nhanh</h2>
+            <p>
+              Để lại thông tin để giữ mẫu hot-hit, đặt in tên/số áo theo yêu cầu
+              hoặc hẹn giờ đến cửa hàng thử đồ trực tiếp không lo hết size.
+            </p>
+
+            <div class="booking-benefits-list">
+              <div class="benefit-item">
+                <span class="benefit-dot"></span>
+                <div>
+                  <h4>Miễn phí in tên & số áo</h4>
+                  <p>Áp dụng cho đơn hàng đặt bộ thi đấu từ 2 bộ trở lên.</p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-dot"></span>
+                <div>
+                  <h4>Hỗ trợ đổi size trong 7 ngày</h4>
+                  <p>
+                    Đổi trả linh hoạt nếu mặc không vừa vặn hoặc không thích
+                    mẫu.
+                  </p>
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <span class="benefit-dot"></span>
+                <div>
+                  <h4>Giữ hàng trước 24h</h4>
+                  <p>
+                    Đặt hẹn thử đồ tại shop, nhân viên sẽ chuẩn bị sẵn size cho
+                    bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Biểu mẫu điền thông tin (Bay từ phải sang) -->
+          <div
+            class="booking-form-side animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.25s"
+          >
+            <form class="apparel-form">
+              <div class="form-group">
+                <label>Họ và tên của bạn</label>
+                <input type="text" placeholder="Ví dụ: Nguyễn Văn A" required />
+              </div>
+
+              <div class="form-group">
+                <label>Số điện thoại (Zalo)</label>
+                <input type="tel" placeholder="0905 xxx xxx" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Sản phẩm lựa chọn</label>
+                  <select>
+                    <option>Áo Cầu Lông Yonex Carbon Dry</option>
+                    <option>Áo Đấu Lining National Team</option>
+                    <option>Áo Thi Đấu Victor Game Edition</option>
+                    <option>Quần Short Victor Motion Flex</option>
+                    <option>Quần Short Yonex Tournament</option>
+                    <option>Quần Short Lining Pro Air</option>
+                    <option>Full Set Quần Áo Thi Đấu</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Size trang phục</label>
+                  <select>
+                    <option>Size S (45 - 55kg)</option>
+                    <option>Size M (55 - 65kg)</option>
+                    <option>Size L (65 - 75kg)</option>
+                    <option>Size XL (75 - 85kg)</option>
+                    <option>Size XXL (> 85kg)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Hình thức dịch vụ</label>
+                <div class="radio-option-group">
+                  <label class="radio-card">
+                    <input
+                      type="radio"
+                      name="service_type"
+                      value="delivery"
+                      checked
+                    />
+                    <span>Giao hàng tận nơi</span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="service_type" value="fitting" />
+                    <span>Hẹn giờ qua shop thử đồ</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Ghi chú thêm (In tên/số áo hoặc ngày giờ hẹn)</label>
+                <textarea
+                  rows="3"
+                  placeholder="Ví dụ: In tên 'TALKER' phía sau áo, hẹn 17h chiều nay qua shop..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-booking">
+                GỬI YÊU CẦU ĐẶT HÀNG
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOM PRINTING SERVICE SECTION ================= -->
+    <section class="custom-print-wrapper">
+      <div class="custom-print-container">
+        <!-- Tiêu đề: Thả nhẹ từ trên xuống -->
+        <div
+          class="section-header text-center animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="section-badge">PRO PRINTING LAB</span>
+          <h2>Dịch Vụ In Tên & Số Áo Thi Đấu Theo Yêu Cầu</h2>
+          <p>
+            Sử dụng công nghệ in chuyển nhiệt Nhật Bản sắc nét, không bong tróc,
+            bám màu vĩnh viễn trên nền vải thun lạnh
+          </p>
+        </div>
+
+        <!-- Khối 3 Công Nghệ In Chính -->
+        <div class="print-tech-grid">
+          <!-- Công nghệ 1 (Bay từ trái sang) -->
+          <div
+            class="print-tech-card animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="tech-number">01</div>
+            <div class="tech-info">
+              <span class="tech-tag">BÁN CHẠY NHẤT</span>
+              <h3>In Decal Nhiệt Cao Cấp</h3>
+              <p>
+                Tạo hiệu ứng nổi 3D sắc nét, font chữ thi đấu chuẩn các giải đấu
+                BWF. Phù hợp in số áo lớn và tên cầu thủ.
+              </p>
+              <ul class="tech-features">
+                <li>Nổi bật trên mọi màu áo</li>
+                <li>Độ bền lên đến 2 năm</li>
+                <li>Lấy ngay trong ngày</li>
+              </ul>
+              <div class="tech-price">Từ 15.000₫ / vị trí</div>
+            </div>
+          </div>
+
+          <!-- Công nghệ 2 (Nổi bật - Phóng to từ dưới lên) -->
+          <div
+            class="print-tech-card featured animate-on-scroll"
+            style="
+              transform: scale(0.9) translateY(40px);
+              animation-delay: 0.3s;
+            "
+          >
+            <div class="tech-number highlight">02</div>
+            <div class="tech-info">
+              <span class="tech-tag highlight-tag"
+                >KHỦNG KHUYÊN DÙNG CHO TEAM</span
+              >
+              <h3>In Chuyển Nhiệt Chìm 3D</h3>
+              <p>
+                Mực in thấm trực tiếp vào từng sợi vải, bề mặt phẳng mịn 100%,
+                cực kỳ thoáng khí và hoàn toàn không phai màu.
+              </p>
+              <ul class="tech-features">
+                <li>Thoáng khí tuyệt đối khi vận động</li>
+                <li>Bám màu vĩnh viễn theo áo</li>
+                <li>Tùy biến họa tiết vô hạn</li>
+              </ul>
+              <div class="tech-price highlight-price">Từ 20.000₫ / vị trí</div>
+            </div>
+          </div>
+
+          <!-- Công nghệ 3 (Bay từ phải sang) -->
+          <div
+            class="print-tech-card animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.4s"
+          >
+            <div class="tech-number">03</div>
+            <div class="tech-info">
+              <span class="tech-tag">SANG TRỌNG</span>
+              <h3>Thêu Vi Cung Logo CLB</h3>
+              <p>
+                Đường thêu máy vi tính dày dặn, sang trọng, chuyên dành cho logo
+                câu lạc bộ hoặc cờ quốc gia trên ngực áo.
+              </p>
+              <ul class="tech-features">
+                <li>Đường chỉ thêu tỉ mỉ, sắc nét</li>
+                <li>Không xù, không đứt chỉ</li>
+                <li>Tạo điểm nhấn đẳng cấp</li>
+              </ul>
+              <div class="tech-price">Từ 30.000₫ / vị trí</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khung Banner Kêu Gọi Đặt Áo Đội (Trượt mượt từ dưới lên) -->
+        <div
+          class="print-cta-banner animate-on-scroll"
+          style="transform: translateY(35px); animation-delay: 0.5s"
+        >
+          <div class="cta-banner-content">
+            <h3>Đặt In Cho Đội / Câu Lạc Bộ?</h3>
+            <p>
+              Chiết khấu ngay 15% - 20% cho đơn hàng in ấn từ 5 bộ trở lên +
+              Miễn phí thiết kế demo trước khi in.
+            </p>
+          </div>
+          <a href="#" class="btn-print-cta">Liên hệ báo giá Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLOATING CONTACT WIDGET ================= -->
+    <div class="floating-contact-widget">
+      <!-- Nút Zalo -->
+      <a
+        href="https://zalo.me/0905xxxxxx"
+        target="_blank"
+        class="widget-btn zalo-btn"
+        title="Chat qua Zalo"
+      >
+        <span class="widget-icon-text">Zalo</span>
+        <span class="widget-tooltip">Tư vấn nhanh qua Zalo</span>
+      </a>
+
+      <!-- Nút Gọi Hotline -->
+      <a href="tel:0905xxxxxx" class="widget-btn phone-btn" title="Gọi ngay">
+        <span class="widget-icon-text">Hotline</span>
+        <span class="widget-tooltip">Gọi trực tiếp shop</span>
+      </a>
+    </div>
+
+    <!-- ================= SITE FOOTER SECTION ================= -->
+    <footer class="site-footer-wrapper">
+      <div class="site-footer-container">
+        <!-- Khung chính -->
+        <div
+          class="footer-glass-box animate-on-scroll"
+          style="animation-delay: 0.1s"
+        >
+          <!-- Cột trái: Thông tin thương hiệu & Trạng thái -->
+          <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+              <div class="logo-accent"></div>
+              <span>BADMINTON PRO MoNo</span>
+            </a>
+            <p class="brand-desc">
+              Trung tâm tư vấn trang thiết bị, đo vòm chân 3D và đan dây vợt cầu
+              lông điện tử chuẩn thi đấu tại Hải Châu, Đà Nẵng.
+            </p>
+
+            <div class="showroom-status-pill">
+              <span class="status-dot"></span>
+              <span>Showroom Mở Cửa: 08:00 - 21:30</span>
+            </div>
+          </div>
+
+          <!-- Cột 1: Sản phẩm -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">SẢN PHẨM</span>
+            <ul>
+              <li><a href="#">Giày Thi Đấu 2026</a></li>
+              <li><a href="#">Vợt Yonex / Victor</a></li>
+              <li><a href="#">Dây Cước & Phụ Kiện</a></li>
+              <li><a href="#">Túi & Balo Chuyên Dụng</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Dịch vụ -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">DỊCH VỤ PRO </span>
+            <ul>
+              <li><a href="#">Đان Dây Điện Tử</a></li>
+              <li><a href="#">Đo Vòm Bàn Chân 3D</a></li>
+              <li><a href="#">Bảo Hành Keo Đế</a></li>
+              <li><a href="#">Thu Cũ Đổi Mới</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối mạng xã hội -->
+          <div class="footer-social-col">
+            <span class="footer-col-title">KẾT NỐI KÊNH SỐ</span>
+            <div class="social-grid">
+              <a href="#" class="social-btn">Facebook OA</a>
+              <a href="#" class="social-btn">Zalo Tư Vấn</a>
+              <a href="#" class="social-btn">TikTok Lab</a>
+              <a href="#" class="social-btn">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh bản quyền dưới cùng (Trễ hơn một chút 0.3s) -->
+        <div
+          class="footer-bottom-bar animate-on-scroll"
+          style="animation-delay: 0.3s"
+        >
+          <p>© 2026 Badminton Pro MoNo Da Nang.</p>
+          <div class="payment-badges">
+            <span>QR Pay</span>
+            <span>Ví MoMo</span>
+            <span>COD Đà Nẵng</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Thư viện WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      // Kích hoạt hiệu ứng chạy khi cuộn tới
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

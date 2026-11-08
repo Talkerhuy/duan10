@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guide.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo shop -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <img src="./img/logo.png" alt="Logo Shop Vợt Cầu Lông" />
+          </span>
+          <span class="logo-text">
+            BADMINTON<span class="logo-accent">.</span>
+          </span>
+        </a>
+        <!-- Nút hamburger  mobile -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tư vấn vợt</a></li>
+            <li><a href="guide.html" class="active">Tư vấn căng dây</a></li>
+            <li><a href="services.html">Quần & áo thể thao</a></li>
+            <li><a href="shoes.html">Giày & phụ kiện</a></li>
+
+            <li><a href="warranty.html">Bảo hành</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Header/Hero Section -->
+    <section class="hero-wrapper">
+      <div class="hero-container">
+        <!-- Cột trái: Nội dung chính (Hiện từ trái sang mượt mà) -->
+        <div class="hero-content animate__animated animate__fadeInLeft">
+          <!-- Badge gây chú ý nhẹ -->
+          <span
+            class="hero-badge animate__animated animate__fadeInDown animate__delay-1s"
+          >
+            DỊCH VỤ CHUYÊN NGHIỆP
+          </span>
+
+          <h1 class="hero-title">TƯ VẤN CĂNG DÂY VỢT CHUẨN KỸ THUẬT</h1>
+
+          <p class="hero-desc">
+            Lựa chọn loại dây cước và lực căng (lbs) tối ưu giúp bạn bứt phá tối
+            đa sức mạnh cú đánh, kiểm soát hướng cầu chính xác và bảo vệ cổ tay
+            khỏi chấn thương.
+          </p>
+
+          <!-- Khối chỉ số thống kê (Nẩy nhẹ lên) -->
+          <div
+            class="hero-stats animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">CHUẨN LỰC CĂNG</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">YONEX</span>
+              <span class="stat-label">MÁY ĐIỆN TỬ</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">30 PHÚT</span>
+              <span class="stat-label">LẤY NGAY TẠI CHỖ</span>
+            </div>
+          </div>
+
+          <!-- Nút hành động (Thu hút nhấp chuột) -->
+          <div
+            class="hero-actions animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <a
+              href="#tu-van"
+              class="btn-primary animate__animated animate__pulse animate__infinite animate__slow"
+            >
+              KHÁM PHÁ BẢNG GIÁ &amp; LOẠI DÂY &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột phải: Hình ảnh (Hiện từ phải sang và phóng to nhẹ) -->
+        <div class="hero-media animate__animated animate__fadeInRight">
+          <img src="./img/Unknown.png" alt="Căng dây vợt cầu lông" />
+          <div class="media-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Tương Tác Trượt & Bung Bảng Chi Tiết -->
+    <section
+      class="interactive-expand-wrapper animate__animated animate__fadeIn"
+    >
+      <div class="expand-container">
+        <div class="section-header animate__animated animate__fadeInDown">
+          <span class="section-badge">TƯƠNG TÁC NÂNG CAO</span>
+          <h2>Khám Phá Chi Tiết Lực Căng</h2>
+          <p>Rê chuột vào hình tròn để mở bảng thông tin chuyên sâu</p>
+        </div>
+
+        <!-- Khung tương tác chính -->
+        <div class="expand-stage">
+          <!-- Cấp độ 1 -->
+          <div
+            class="expand-item animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="circle-core">
+              <span class="item-tag">Mới bắt đầu</span>
+              <h3>20 - 22 LBS</h3>
+              <p class="circle-hint"></p>
+            </div>
+
+            <!-- Bảng chữ nhật dài bung ra bên cạnh -->
+            <div class="detail-panel">
+              <div class="panel-header">
+                <span class="panel-tag">Cấp Độ Cơ Bản</span>
+                <h4>Dành Cho Người Mới & Cổ Tay Yếu</h4>
+              </div>
+              <p class="panel-desc">
+                Mức căng này tạo ra hiệu ứng "trampoline" giúp trợ lực tối đa,
+                đánh cầu bay xa mà không mất nhiều sức.
+              </p>
+              <ul class="panel-features">
+                <li><span>Độ trợ lực:</span> 10/10 (Rất cao)</li>
+                <li><span>Độ bền dây:</span> Tối ưu lâu đứt</li>
+                <li><span>Khuyên dùng:</span> Học sinh, người mới chơi</li>
+                <li><span>Dây phù hợp:</span> Yonex BG 65, BG 65 Ti</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cấp độ 2 -->
+          <div
+            class="expand-item animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="circle-core">
+              <span class="item-tag highlight">Phổ biến</span>
+              <h3>23 - 25 LBS</h3>
+              <p class="circle-hint"></p>
+            </div>
+
+            <div class="detail-panel">
+              <div class="panel-header">
+                <span class="panel-tag highlight">Cấp Độ Phong Trào</span>
+                <h4>Cân Bằng Hoàn Hảo Giữa Lực & Kiểm Soát</h4>
+              </div>
+              <p class="panel-desc">
+                Lựa chọn quốc dân của đại đa số người chơi phong trào. Cho cảm
+                giác cầu đanh, tiếng nổ vui tai.
+              </p>
+              <ul class="panel-features">
+                <li><span>Độ trợ lực:</span> 8/10 (Cân bằng)</li>
+                <li><span>Độ nảy cầu:</span> 8.5/10 (Đanh giòn)</li>
+                <li><span>Khuyên dùng:</span> Người chơi phong trào</li>
+                <li><span>Dây phù hợp:</span> Nanogy 95, Exbolt 63</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cấp độ 3 -->
+          <div
+            class="expand-item animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="circle-core">
+              <span class="item-tag">Nâng cao</span>
+              <h3>26 - 30+ LBS</h3>
+              <p class="circle-hint"></p>
+            </div>
+
+            <div class="detail-panel">
+              <div class="panel-header">
+                <span class="panel-tag">Cấp Độ Chuyên Nghiệp</span>
+                <h4>Độ Chính Xác Tuyệt Đối & Lực Tay Khủng</h4>
+              </div>
+              <p class="panel-desc">
+                Dành riêng cho các vận động viên và người chơi có cổ tay cực
+                khỏe. Đập cầu cắm sân rất nguy hiểm.
+              </p>
+              <ul class="panel-features">
+                <li><span>Độ trợ lực:</span> Thấp (Cần lực tay)</li>
+                <li><span>Độ chính xác:</span> 10/10 (Tuyệt đối)</li>
+                <li><span>Khuyên dùng:</span> Vận động viên, bán chuyên</li>
+                <li><span>Dây phù hợp:</span> Exbolt 63, Aerobite</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- strings-wrapper -->
+    <section class="strings-wrapper">
+      <div class="strings-container">
+        <!-- Tiêu đề phần -->
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">DANH MỤC CƯỚC</span>
+          <h2>Các Dòng Dây Cước Phổ Biến Nhất</h2>
+          <p>
+            Lựa chọn loại dây phù hợp nhất với phong cách và trình độ thi đấu
+            của bạn
+          </p>
+        </div>
+
+        <div class="strings-grid">
+          <!-- Thẻ 1 -->
+          <div class="string-card animate-on-scroll">
+            <div class="card-img-box">
+              <img src="./img/căn1.webp" alt="Yonex BG 65" />
+              <span class="string-tag">Siêu Bền</span>
+            </div>
+            <div class="card-body">
+              <h3>Yonex BG 65</h3>
+              <p class="string-desc">
+                Dòng dây quốc dân với sợi dệt đặc biệt, mang lại độ bền cực cao
+                và cảm giác đánh êm tay.
+              </p>
+              <div class="string-specs">
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ bền</span><strong>10/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ nảy</span><strong>6/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Âm thanh</span><strong>6/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">130.000đ</span>
+              <a href="#" class="btn-select">Chọn dây</a>
+            </div>
+          </div>
+
+          <!-- Thẻ 2 -->
+          <div class="string-card featured animate-on-scroll">
+            <div class="card-img-box">
+              <img src="./img/căn2.webp" alt="Yonex BG 65 Ti" />
+              <span class="string-tag highlight">Nổi Bật</span>
+            </div>
+            <div class="card-body">
+              <h3>Yonex BG 65 Ti</h3>
+              <p class="string-desc">
+                Phủ lớp Titanium cao cấp tăng cường cảm giác nảy cầu đanh thép
+                và hạn chế trùng dây.
+              </p>
+              <div class="string-specs">
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ bền</span><strong>8/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ nảy</span><strong>7/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Âm thanh</span><strong>7/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">140.000đ</span>
+              <a href="#" class="btn-select">Chọn dây</a>
+            </div>
+          </div>
+
+          <!-- Thẻ 3 -->
+          <div class="string-card animate-on-scroll">
+            <div class="card-img-box">
+              <img src="./img/căn3.jpeg" alt="Yonex NBG 95" />
+              <span class="string-tag">Toàn Diện</span>
+            </div>
+            <div class="card-body">
+              <h3>Yonex Nanogy 95</h3>
+              <p class="string-desc">
+                Sử dụng sợi Nano carbon giúp cân bằng hoàn hảo giữa độ nảy cao
+                và độ bền lâu dài.
+              </p>
+              <div class="string-specs">
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ bền</span><strong>8.5/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ nảy</span><strong>8/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Âm thanh</span><strong>7.5/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">170.000đ</span>
+              <a href="#" class="btn-select">Chọn dây</a>
+            </div>
+          </div>
+
+          <!-- Thẻ 4 -->
+          <div class="string-card animate-on-scroll">
+            <div class="card-img-box">
+              <img src="./img/căn4.jpeg" alt="Yonex Exbolt 63" />
+              <span class="string-tag">Trợ Lực Cao</span>
+            </div>
+            <div class="card-body">
+              <h3>Yonex Exbolt 63</h3>
+              <p class="string-desc">
+                Sợi Forge Fiber siêu mỏng cho tốc độ bốc cầu cực nhanh và tiếng
+                nổ cầu đanh giòn.
+              </p>
+              <div class="string-specs">
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ bền</span><strong>7/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Độ nảy</span><strong>10/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-label">
+                    <span>Âm thanh</span><strong>10/10</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="price">180.000đ</span>
+              <a href="#" class="btn-select">Chọn dây</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Quy trình dịch vụ -->
+    <section class="workflow-wrapper">
+      <div class="workflow-container">
+        <!-- Tiêu đề -->
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">QUY TRÌNH CHUẨN</span>
+          <h2>4 Bước Căng Dây Chuyên Nghiệp</h2>
+          <p>
+            Trải nghiệm dịch vụ đan vợt công nghệ cao với sự tận tâm trong từng
+            chi tiết
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <!-- Bước 1 -->
+          <div
+            class="workflow-card animate-on-scroll"
+            style="animation-delay: 0.1s"
+          >
+            <div class="step-number">01</div>
+            <div class="step-icon">📋</div>
+            <h3>Tư Vấn & Chọn Dây</h3>
+            <p>
+              Lắng nghe lối đánh và trình độ của bạn để chọn ra dòng cước và số
+              kg (lbs) phù hợp nhất.
+            </p>
+            <span class="step-tag">Bước 1</span>
+          </div>
+
+          <!-- Bước 2 (Trễ 0.2s) -->
+          <div
+            class="workflow-card animate-on-scroll"
+            style="animation-delay: 0.2s"
+          >
+            <div class="step-number">02</div>
+            <div class="step-icon">✂️</div>
+            <h3>Cắt Cước & Vệ Sinh</h3>
+            <p>
+              Cắt bỏ cước cũ cẩn thận theo đường chéo để tránh méo khung, kiểm
+              tra và thay gen vợt bị hỏng.
+            </p>
+            <span class="step-tag">Bước 2</span>
+          </div>
+
+          <!-- Bước 3 - Quan Trọng (Trễ 0.3s, nổi bật hơn) -->
+          <div
+            class="workflow-card featured animate-on-scroll"
+            style="animation-delay: 0.3s"
+          >
+            <div class="step-number">03</div>
+            <div class="step-icon">⚡</div>
+            <h3>Căng Máy Điện Tử</h3>
+            <p>
+              Sử dụng máy căng điện tử hiện đại, kéo chuẩn từng kg với công nghệ
+              căng 4 nút tiêu chuẩn quốc tế.
+            </p>
+            <span class="step-tag highlight">Quan Trọng</span>
+          </div>
+
+          <!-- Bước 4 (Trễ 0.4s) -->
+          <div
+            class="workflow-card animate-on-scroll"
+            style="animation-delay: 0.4s"
+          >
+            <div class="step-number">04</div>
+            <div class="step-icon">🏸</div>
+            <h3>Kiểm Tra & Bàn Giao</h3>
+            <p>
+              Kiểm tra lại độ nảy của mặt vợt, dán tem bảo hành và đo độ căng
+              trước khi bàn giao cho khách.
+            </p>
+            <span class="step-tag">Bước 4</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Bảng giá dịch vụ -->
+    <section class="pricing-wrapper">
+      <div class="pricing-container">
+        <!-- Tiêu đề -->
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">BẢNG GIÁ MINH BẠCH</span>
+          <h2>Bảng Giá Dịch Vụ Căng Dây</h2>
+          <p>
+            Báo giá rõ ràng, không chi phí phát sinh, miễn phí bảo dưỡng khung &
+            thay gen hỏng
+          </p>
+        </div>
+
+        <!-- Khối Bảng Giá Chính -->
+        <div class="pricing-grid">
+          <!-- Gói 1 -->
+          <div
+            class="price-card animate-on-scroll"
+            style="animation-delay: 0.1s"
+          >
+            <div class="card-top">
+              <span class="price-tag">Tự mang dây</span>
+              <h3>Công Căng Cước</h3>
+              <div class="price-amount">
+                <span class="currency">VND</span>
+                <span class="number">40.000</span>
+                <span class="unit">/lần</span>
+              </div>
+              <p class="price-desc">
+                Dành cho khách hàng đã có sẵn cuộn dây cước cá nhân mang đến
+                shop.
+              </p>
+            </div>
+            <div class="card-features">
+              <ul>
+                <li>✓ Căng bằng máy điện tử 4 nút chuẩn ISO</li>
+                <li>✓ Miễn phí vệ sinh & nắn gen gãy</li>
+                <li>✓ Đo độ căng tần số âm thanh</li>
+                <li>✓ Bảo hành dây 3 ngày</li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a href="#" class="btn-price-outline">Đặt lịch căng ngay</a>
+            </div>
+          </div>
+
+          <!-- Gói 2 - Nổi bật (Trễ 0.2s) -->
+          <div
+            class="price-card featured animate-on-scroll"
+            style="animation-delay: 0.2s"
+          >
+            <div class="featured-badge">BÁN CHẠY NHẤT</div>
+            <div class="card-top">
+              <span class="price-tag highlight">Dây + Công căng</span>
+              <h3>Trọn Gói BG 65</h3>
+              <div class="price-amount">
+                <span class="currency">VND</span>
+                <span class="number">130.000</span>
+                <span class="unit">/trọn gói</span>
+              </div>
+              <p class="price-desc">
+                Dòng cước siêu bền quốc dân, bao gồm cả tiền cước Yonex chính
+                hãng và công đan.
+              </p>
+            </div>
+            <div class="card-features">
+              <ul>
+                <li>✓ Cước Yonex BG 65 chính hãng 100%</li>
+                <li>✓ Căng bằng máy điện tử 4 nút chuẩn ISO</li>
+                <li>✓ Miễn phí thay tối đa 6 gen bị hỏng</li>
+                <li>✓ Tặng tem dán bảo hành mặt vợt</li>
+                <li>✓ Bảo hành dây 7 ngày</li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a href="#" class="btn-price-solid">Chọn gói này</a>
+            </div>
+          </div>
+
+          <!-- Gói 3 (Trễ 0.3s) -->
+          <div
+            class="price-card animate-on-scroll"
+            style="animation-delay: 0.3s"
+          >
+            <div class="card-top">
+              <span class="price-tag">Cước Cao Cấp</span>
+              <h3>Trọn Gói Exbolt / NBG</h3>
+              <div class="price-amount">
+                <span class="currency">VND</span>
+                <span class="number">180.000</span>
+                <span class="unit">/trọn gói</span>
+              </div>
+              <p class="price-desc">
+                Dành cho lông thủ thích tiếng nổ đanh giòn, trợ lực cao và kiểm
+                soát cầu tuyệt đối.
+              </p>
+            </div>
+            <div class="card-features">
+              <ul>
+                <li>✓ Tùy chọn Exbolt 63 / Nanogy 95 / Aerobite</li>
+                <li>✓ Căng máy điện tử chuẩn xác từng 0.1 lbs</li>
+                <li>✓ Miễn phí thay toàn bộ gen hỏng / dãn</li>
+                <li>✓ Kiểm tra & tư vấn độ căng theo lối đánh</li>
+                <li>✓ Bảo hành dây 10 ngày</li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a href="#" class="btn-price-outline">Chọn gói này</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khối dịch vụ cộng thêm (Add-ons) (Trễ 0.4s) -->
+        <div class="addons-box animate-on-scroll" style="animation-delay: 0.4s">
+          <h4>Các Dịch Vụ Phụ Kiện Đi Kèm:</h4>
+          <div class="addons-list">
+            <div class="addon-item">
+              <span class="addon-name"
+                >Quấn cán vợt chính hãng (VS / Yonex)</span
+              >
+              <span class="addon-price">+ 20.000đ - 35.000đ</span>
+            </div>
+            <div class="addon-item">
+              <span class="addon-name">Thay trọn bộ Gen toàn bộ mặt vợt</span>
+              <span class="addon-price">+ 40.000đ</span>
+            </div>
+            <div class="addon-item">
+              <span class="addon-name"
+                >Dán băng keo bảo vệ cạp vợt chống xước</span
+              >
+              <span class="addon-price">+ 15.000đ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Đánh Giá Độc Đáo Nâng Cấp -->
+    <section class="reviews-wrapper">
+      <div class="reviews-container">
+        <!-- Tiêu đề -->
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">GÓC KHÁCH HÀNG</span>
+          <h2>Trải Nghiệm Thực Tế</h2>
+          <p>Cảm nhận chân thực từ những lông thủ đã đan cước tại shop</p>
+        </div>
+
+        <div class="reviews-staggered">
+          <!-- Thẻ 1 -->
+          <div
+            class="review-card card-top-align animate-on-scroll"
+            style="animation-delay: 0.1s"
+          >
+            <div class="quote-mark">“</div>
+            <div class="review-header">
+              <div class="review-stars">★★★★★</div>
+              <span class="verified-tag">✓ Đã đan vợt</span>
+            </div>
+            <p class="review-text">
+              "Căng 24 lbs dây BG65 ở đây oánh rất sướng, mặt lưới căng đều tăm
+              tắp. Bạn kĩ thuật viên tư vấn tận tình, hỗ trợ nắn lại gen hỏng
+              miễn phí nữa."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar">H</div>
+              <div class="reviewer-detail">
+                <h4>Minh Huy</h4>
+                <span>Lông thủ phong trào</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thẻ 2 - Nổi bật chính giữa (Trễ 0.2s) -->
+          <div
+            class="review-card card-featured animate-on-scroll"
+            style="animation-delay: 0.2s"
+          >
+            <div class="quote-mark">“</div>
+            <div class="review-header">
+              <div class="review-stars">★★★★★</div>
+              <span class="verified-tag primary">★ Khách VIP</span>
+            </div>
+            <p class="review-text">
+              "Căng máy điện tử cực kỳ chuẩn kg, test âm thanh tiếng nổ đanh
+              giòn! Bảo hành chu đáo nên mình cực kỳ yên tâm khi đan cước Exbolt
+              63 ở đây."
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar primary">V</div>
+              <div class="reviewer-detail">
+                <h4>Quốc Vũ</h4>
+                <span>Vận động viên bán chuyên</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thẻ 3 (Trễ 0.3s) -->
+          <div
+            class="review-card card-top-align animate-on-scroll"
+            style="animation-delay: 0.3s"
+          >
+            <div class="quote-mark">“</div>
+            <div class="review-header">
+              <div class="review-stars">★★★★★</div>
+              <span class="verified-tag">✓ Đã đan vợt</span>
+            </div>
+            <p class="review-text">
+              "Quy trình cắt cước chéo rất chuẩn, không lo om hay méo khung.
+              Thời gian lấy nhanh, có dán tem đo lực đàng hoàng. Rất đáng tin
+              cậy!"
+            </p>
+            <div class="reviewer-info">
+              <div class="avatar">T</div>
+              <div class="reviewer-detail">
+                <h4>Tuấn Anh</h4>
+                <span>CLB Cầu Lông Đà Nẵng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLOATING CONTACT WIDGET ================= -->
+    <div
+      class="floating-contact-widget animate-on-scroll"
+      style="animation-delay: 0.5s"
+    >
+      <!-- Nút Zalo (Hiệu ứng nhịp đập pulse dùng CSS riêng hoặc giữ nguyên tùy ý) -->
+      <a
+        href="https://zalo.me/0905xxxxxx"
+        target="_blank"
+        class="widget-btn zalo-btn pulse-anim"
+        title="Chat qua Zalo"
+      >
+        <span class="widget-icon-text">Zalo</span>
+        <span class="widget-tooltip">Tư vấn nhanh qua Zalo</span>
+      </a>
+
+      <!-- Nút Gọi Hotline -->
+      <a href="tel:0905xxxxxx" class="widget-btn phone-btn" title="Gọi ngay">
+        <span class="widget-icon-text">Hotline</span>
+        <span class="widget-tooltip">Gọi trực tiếp shop</span>
+      </a>
+    </div>
+
+    <!-- ================= SITE FOOTER SECTION ================= -->
+    <footer class="site-footer-wrapper">
+      <div class="site-footer-container">
+        <!-- Khung chính -->
+        <div
+          class="footer-glass-box animate-on-scroll"
+          style="animation-delay: 0.1s"
+        >
+          <!-- Cột trái: Thông tin thương hiệu & Trạng thái -->
+          <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+              <div class="logo-accent"></div>
+              <span>BADMINTON PRO MoNo</span>
+            </a>
+            <p class="brand-desc">
+              Trung tâm tư vấn trang thiết bị, đo vòm chân 3D và đan dây vợt cầu
+              lông điện tử chuẩn thi đấu tại Hải Châu, Đà Nẵng.
+            </p>
+
+            <div class="showroom-status-pill">
+              <span class="status-dot"></span>
+              <span>Showroom Mở Cửa: 08:00 - 21:30</span>
+            </div>
+          </div>
+
+          <!-- Cột 1: Sản phẩm -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">SẢN PHẨM</span>
+            <ul>
+              <li><a href="#">Giày Thi Đấu 2026</a></li>
+              <li><a href="#">Vợt Yonex / Victor</a></li>
+              <li><a href="#">Dây Cước & Phụ Kiện</a></li>
+              <li><a href="#">Túi & Balo Chuyên Dụng</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Dịch vụ -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">DỊCH VỤ PRO </span>
+            <ul>
+              <li><a href="#">Đان Dây Điện Tử</a></li>
+              <li><a href="#">Đo Vòm Bàn Chân 3D</a></li>
+              <li><a href="#">Bảo Hành Keo Đế</a></li>
+              <li><a href="#">Thu Cũ Đổi Mới</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối mạng xã hội -->
+          <div class="footer-social-col">
+            <span class="footer-col-title">KẾT NỐI KÊNH SỐ</span>
+            <div class="social-grid">
+              <a href="#" class="social-btn">Facebook OA</a>
+              <a href="#" class="social-btn">Zalo Tư Vấn</a>
+              <a href="#" class="social-btn">TikTok Lab</a>
+              <a href="#" class="social-btn">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh bản quyền dưới cùng (Trễ hơn một chút 0.3s) -->
+        <div
+          class="footer-bottom-bar animate-on-scroll"
+          style="animation-delay: 0.3s"
+        >
+          <p>© 2026 Badminton Pro MoNo Da Nang.</p>
+          <div class="payment-badges">
+            <span>QR Pay</span>
+            <span>Ví MoMo</span>
+            <span>COD Đà Nẵng</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Thư viện WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      // Kích hoạt hiệu ứng chạy khi cuộn tới
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

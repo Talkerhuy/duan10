@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shoes.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ================= FLOATING CONTACT WIDGET ================= -->
+    <div class="floating-contact-widget">
+      <!-- Nút Zalo -->
+      <a
+        href="https://zalo.me/0905xxxxxx"
+        target="_blank"
+        class="widget-btn zalo-btn"
+        title="Chat qua Zalo"
+      >
+        <span class="widget-icon-text">Zalo</span>
+        <span class="widget-tooltip">Tư vấn nhanh qua Zalo</span>
+      </a>
+
+      <!-- Nút Gọi Hotline -->
+      <a href="tel:0905xxxxxx" class="widget-btn phone-btn" title="Gọi ngay">
+        <span class="widget-icon-text">Hotline</span>
+        <span class="widget-tooltip">Gọi trực tiếp shop</span>
+      </a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo shop -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <img src="./img/logo.png" alt="Logo Shop Vợt Cầu Lông" />
+          </span>
+          <span class="logo-text">
+            BADMINTON<span class="logo-accent">.</span>
+          </span>
+        </a>
+        <!-- Nút hamburger  mobile -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tư vấn vợt</a></li>
+            <li><a href="guide.html">Tư vấn căng dây</a></li>
+            <li><a href="services.html">Quần & áo thể thao</a></li>
+            <li><a href="shoes.html" class="active">Giày & phụ kiện</a></li>
+
+            <li><a href="warranty.html">Bảo hành</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= SHOES HERO INTRO ================= -->
+    <section class="shoes-hero-3d-wrapper">
+      <div class="shoes-hero-3d-container">
+        <!-- CỘT TRÁI: Quả cầu lông thiết kế thực tế 3D (Bay nguyên khối từ trái sang) -->
+        <div
+          class="shoes-hero-left animate-on-scroll"
+          style="transform: translateX(-50px); animation-delay: 0.1s"
+        >
+          <div class="shuttle-real-stage">
+            <div class="shuttle-real-object">
+              <!-- Vành 16 lông cầu chân thực -->
+              <div class="real-feather-ring">
+                <span style="--i: 1"></span><span style="--i: 2"></span
+                ><span style="--i: 3"></span><span style="--i: 4"></span>
+                <span style="--i: 5"></span><span style="--i: 6"></span
+                ><span style="--i: 7"></span><span style="--i: 8"></span>
+                <span style="--i: 9"></span><span style="--i: 10"></span
+                ><span style="--i: 11"></span><span style="--i: 12"></span>
+                <span style="--i: 13"></span><span style="--i: 14"></span
+                ><span style="--i: 15"></span><span style="--i: 16"></span>
+              </div>
+              <!-- Vòng chỉ buộc giữ lông -->
+              <div class="shuttle-thread-line upper"></div>
+              <div class="shuttle-thread-line lower"></div>
+              <!-- Đế cầu bọc da PU trắng tự nhiên -->
+              <div class="real-cork-head"></div>
+            </div>
+            <!-- Bóng đổ 3D dưới đế -->
+            <div class="real-floor-shadow"></div>
+          </div>
+        </div>
+
+        <!-- CỘT PHẢI: Nội dung & 3 Thẻ Hover Độc Đáo -->
+        <div class="shoes-hero-right">
+          <!-- Tiêu đề: Thả nhẹ từ trên xuống -->
+          <div
+            class="animate-on-scroll"
+            style="transform: translateY(-30px); animation-delay: 0.15s"
+          >
+            <span class="badge-tech-light">FOOTWEAR & ACCESSORIES LAB</span>
+            <h2>Giày Chuyên Dụng & Phụ Kiện Cầu Lông</h2>
+            <p class="hero-desc">
+              Bảo vệ cổ chân tối đa, chống lật sơ mi và tối ưu hóa chuyển động
+              tốc độ cao với các dòng giày đệm khí & phụ kiện thi đấu chính
+              hãng.
+            </p>
+          </div>
+
+          <!-- 3 Điểm nhấn với hiệu ứng trượt từ phải sang rõ ràng -->
+          <div class="hero-features-interactive">
+            <!-- Thẻ 1 (Trễ 0.25s) -->
+            <div
+              class="interactive-card animate-on-scroll"
+              style="transform: translateX(40px); animation-delay: 0.25s"
+            >
+              <div class="card-glow-edge"></div>
+              <span class="card-num">01</span>
+              <div class="card-content">
+                <h4>Chống Lật Cổ Chân 360°</h4>
+                <p>Đế kép cao su bám sân flex chống trơn trượt tuyệt đối</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+
+            <!-- Thẻ 2 - Nổi bật (Trễ 0.35s) -->
+            <div
+              class="interactive-card highlight-card animate-on-scroll"
+              style="transform: translateX(40px); animation-delay: 0.35s"
+            >
+              <div class="card-glow-edge"></div>
+              <span class="card-num highlight">02</span>
+              <div class="card-content">
+                <h4>Đệm Khí Giảm Chấn Năng Lượng</h4>
+                <p>Hấp thụ 95% chấn sốc, bật nhảy êm ái bảo vệ khớp gối</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+
+            <!-- Thẻ 3 (Trễ 0.45s) -->
+            <div
+              class="interactive-card animate-on-scroll"
+              style="transform: translateX(40px); animation-delay: 0.45s"
+            >
+              <div class="card-glow-edge"></div>
+              <span class="card-num">03</span>
+              <div class="card-content">
+                <h4>Hệ Phụ Kiện Thi Đấu Pro</h4>
+                <p>Quấn cán chống trượt, vớ cổ cao & túi đựng chống thấm</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHOES & ACCESSORIES PRODUCTS ================= -->
+    <section class="shoes-products-wrapper">
+      <div class="shoes-products-container">
+        <!-- Header & Bộ lọc Tab: Thả nhẹ từ trên xuống -->
+        <div
+          class="products-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <div class="header-text">
+            <span class="section-badge">COLLECTION 2026</span>
+            <h2>Danh Mục Giày & Phụ Kiện Chuyên Dụng</h2>
+          </div>
+
+          <!-- Tab chuyển đổi danh mục -->
+          <div class="category-tabs">
+            <button class="tab-btn active" data-filter="all">Tất Cả</button>
+            <button class="tab-btn" data-filter="shoes">Giày Thi Đấu</button>
+            <button class="tab-btn" data-filter="accessories">
+              Phụ Kiện Pro
+            </button>
+          </div>
+        </div>
+
+        <!-- Lưới sản phẩm -->
+        <div class="shoes-grid">
+          <!-- Sản phẩm 1: Giày Pro (Featured - Phóng to nổi bật từ dưới lên) -->
+          <div
+            class="shoe-card featured animate-on-scroll"
+            data-category="shoes"
+            style="
+              transform: scale(0.92) translateY(40px);
+              animation-delay: 0.2s;
+            "
+          >
+            <div class="card-badge">BÁN CHẠY NHẤT</div>
+            <div class="card-img-wrap">
+              <img
+                src="./img/sô1.png"
+                alt="Giày Yonex Eclipsion Z3"
+                class="product-img"
+              />
+              <span class="img-placeholder" style="display: none"
+                >Ảnh Giày Yonex Eclipsion</span
+              >
+            </div>
+            <div class="card-details">
+              <span class="tech-tag">CHỐNG LẬT CỔ CHÂN 360°</span>
+              <h3>Giày Cầu Lông Yonex Eclipsion Z3</h3>
+              <p class="shoe-spec">
+                Đế Power Cushion+ giảm chấn | Form ôm chân Athletic
+              </p>
+              <div class="card-bottom">
+                <div class="price-box">
+                  <span class="current-price">3.250.000₫</span>
+                  <span class="old-price">3.600.000₫</span>
+                </div>
+                <button class="btn-buy-now">Đặt Hàng</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sản phẩm 2: Giày Đệm Khí (Bay từ trái sang) -->
+          <div
+            class="shoe-card animate-on-scroll"
+            data-category="shoes"
+            style="transform: translateX(-40px); animation-delay: 0.3s"
+          >
+            <div class="card-img-wrap">
+              <img
+                src="./img/sô2.png"
+                alt="Giày Victor P9200 TTY"
+                class="product-img"
+              />
+              <span class="img-placeholder" style="display: none"
+                >Ảnh Giày Victor P9200</span
+              >
+            </div>
+            <div class="card-details">
+              <span class="tech-tag">ĐỆM KHÍ ĐA DIỆN</span>
+              <h3>Giày Cầu Lông Victor P9200 TTY</h3>
+              <p class="shoe-spec">
+                Công nghệ Tri-Effect | Chống lật sơ mi tuyệt đối
+              </p>
+              <div class="card-bottom">
+                <div class="price-box">
+                  <span class="current-price">2.890.000₫</span>
+                </div>
+                <button class="btn-buy-now">Đặt Hàng</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sản phẩm 3: Phụ kiện quấn cán (Trượt thẳng từ dưới lên) -->
+          <div
+            class="shoe-card animate-on-scroll"
+            data-category="accessories"
+            style="transform: translateY(40px); animation-delay: 0.4s"
+          >
+            <div class="card-img-wrap">
+              <img
+                src="./img/hi.jpeg"
+                alt="Quấn Cán Yonex AC102EX"
+                class="product-img"
+              />
+              <span class="img-placeholder" style="display: none"
+                >Ảnh Quấn Cán Yonex AC102EX</span
+              >
+            </div>
+            <div class="card-details">
+              <span class="tech-tag">PHỤ KIỆN CHÍNH HÃNG</span>
+              <h3>Cuộn Quấn Cán Yonex AC102EX (Vỉ 3 cái)</h3>
+              <p class="shoe-spec">
+                Độ bám mồ hôi siêu việt | Cảm giác êm ái khi cầm
+              </p>
+              <div class="card-bottom">
+                <div class="price-box">
+                  <span class="current-price">120.000₫</span>
+                </div>
+                <button class="btn-buy-now">Đặt Hàng</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sản phẩm 4: Tất/Vớ cầu lông (Bay từ phải sang) -->
+          <div
+            class="shoe-card animate-on-scroll"
+            data-category="accessories"
+            style="transform: translateX(40px); animation-delay: 0.5s"
+          >
+            <div class="card-img-wrap">
+              <img
+                src="./img/sô4.png"
+                alt="Vớ Thể Thao Pro"
+                class="product-img"
+              />
+              <span class="img-placeholder" style="display: none"
+                >Ảnh Vớ Thể Thao Pro</span
+              >
+            </div>
+            <div class="card-details">
+              <span class="tech-tag">BẢO VỆ BÀN CHÂN</span>
+              <h3>Vớ Cổ Cao Dày Đặn Chống Trượt</h3>
+              <p class="shoe-spec">
+                Đệm gót chống phồng rộp | Thun dệt thoáng khí 3D
+              </p>
+              <div class="card-bottom">
+                <div class="price-box">
+                  <span class="current-price">85.000₫</span>
+                </div>
+                <button class="btn-buy-now">Đặt Hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT QUICK VIEW MODAL ================= -->
+    <div id="productModal" class="quick-view-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content-box">
+        <!-- Nút đóng Modal -->
+        <button class="modal-close-btn">&times;</button>
+
+        <div class="modal-grid">
+          <!-- Cột trái: Ảnh sản phẩm lớn -->
+          <div class="modal-img-col">
+            <div class="modal-main-img-wrap">
+              <img
+                src="./img/sho.jpeg"
+                alt="Sản phẩm chi tiết"
+                id="modalProductImg"
+                class="modal-img"
+              />
+              <span class="modal-badge-tag" id="modalProductTag"
+                >CHÍNH HÃNG 100%</span
+              >
+            </div>
+          </div>
+
+          <!-- Cột phải: Thông tin chi tiết & Tùy chọn -->
+          <div class="modal-info-col">
+            <span class="modal-tech-category" id="modalTechTag"
+              >CÔNG NGHỆ ĐỈNH CAO</span
+            >
+            <h2 id="modalProductName">Tên Sản Phẩm Cầu Lông</h2>
+
+            <div class="modal-price-box">
+              <span id="modalCurrentPrice" class="modal-current-price">0₫</span>
+              <span id="modalOldPrice" class="modal-old-price"></span>
+            </div>
+
+            <p id="modalProductDesc" class="modal-description">
+              Mô tả chi tiết về công nghệ, chất liệu và tính năng chuyên dụng
+              giúp tối ưu hóa hiệu suất thi đấu của lông thủ.
+            </p>
+
+            <!-- Chọn Size (Dành riêng cho Giày / Vớ) -->
+            <div class="modal-option-group" id="sizeSelectionGroup">
+              <label>Chọn Size (EU):</label>
+              <div class="size-options-grid">
+                <button class="size-btn">39</button>
+                <button class="size-btn active">40</button>
+                <button class="size-btn">41</button>
+                <button class="size-btn">42</button>
+                <button class="size-btn">43</button>
+                <button class="size-btn">44</button>
+              </div>
+            </div>
+
+            <!-- Cam kết dịch vụ -->
+            <div class="modal-features-list">
+              <div class="m-feat-item">
+                ✓ Bảo hành keo đế 6 tháng tại Đà Nẵng
+              </div>
+              <div class="m-feat-item">✓ Đổi size miễn phí trong 7 ngày</div>
+            </div>
+
+            <!-- Nút hành động -->
+            <div class="modal-actions">
+              <button class="btn-add-cart">Thêm Vào Giỏ Hàng</button>
+              <button class="btn-direct-buy">Đặt Mua Nhanh</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SHOES FITTING FORM SECTION ================= -->
+    <section class="shoes-fitting-wrapper">
+      <div class="shoes-fitting-container">
+        <div class="fitting-card">
+          <!-- Cột trái: Thông tin Showroom (Bay từ trái sang) -->
+          <div
+            class="fitting-info-col animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.1s"
+          >
+            <span class="badge-tech-light">PRO FITTING SERVICE</span>
+            <h2>Đặt Lịch Thử Size & Tư Vấn Giày Trực Tiếp</h2>
+            <p>
+              Đến trực tiếp Showroom Đà Nẵng để trải nghiệm đo chuẩn phom chân,
+              thử đệm khí và nhận tư vấn chống lật cổ chân từ chuyên gia.
+            </p>
+
+            <div class="fitting-store-info">
+              <div class="info-item">
+                <div>
+                  <h4>Địa chỉ Showroom</h4>
+                  <p>Hải Châu, TP. Đà Nẵng</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div>
+                  <h4>Dịch vụ đi kèm</h4>
+                  <p>Đo độ vòm bàn chân & test đế bám sân miễn phí</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Form đặt lịch (Bay từ phải sang) -->
+          <div
+            class="fitting-form-col animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.25s"
+          >
+            <form class="shoes-booking-form">
+              <div class="form-group">
+                <label>Họ và tên của bạn</label>
+                <input type="text" placeholder="Nhập họ và tên..." required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Số điện thoại / Zalo</label>
+                  <input type="tel" placeholder="090x xxx xxx" required />
+                </div>
+                <div class="form-group">
+                  <label>Size giày thường mang (EU)</label>
+                  <select>
+                    <option value="39">Size 39</option>
+                    <option value="40" selected>Size 40</option>
+                    <option value="41">Size 41</option>
+                    <option value="42">Size 42</option>
+                    <option value="43">Size 43</option>
+                    <option value="44">Size 44</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Nhu cầu ưu tiên</label>
+                <select>
+                  <option value="stability">
+                    Chống lật cổ chân & bảo vệ khớp
+                  </option>
+                  <option value="cushion">
+                    Đệm khí siêu êm (Bật nhảy nhiều)
+                  </option>
+                  <option value="speed">Giày di chuyển tốc độ nhẹ chân</option>
+                  <option value="accessory">
+                    Thử & mua phụ kiện (Vớ, quấn cán, túi)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Thời gian dự kiến đến thử</label>
+                <input type="datetime-local" required />
+              </div>
+
+              <button type="submit" class="btn-submit-fitting">
+                XÁC NHẬN ĐẶT LỊCH THỬ SIZE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHOES COMPARISON SECTION ================= -->
+    <section class="shoes-compare-wrapper">
+      <div class="shoes-compare-container">
+        <!-- Tiêu đề: Thả nhẹ từ trên xuống -->
+        <div
+          class="compare-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">TECH SPEC COMPARISON</span>
+          <h2>So Sánh Các Dòng Giày Chuyên Dụng</h2>
+          <p>
+            Lựa chọn dòng giày phù hợp với lối chơi và tình trạng vòm bàn chân
+            của bạn.
+          </p>
+        </div>
+
+        <!-- Bảng so sánh: Phóng to nhẹ từ dưới lên -->
+        <div
+          class="compare-table-wrap animate-on-scroll"
+          style="
+            transform: scale(0.96) translateY(40px);
+            animation-delay: 0.25s;
+          "
+        >
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Dòng Giày</th>
+                <th>Đặc Tính Nổi Bật</th>
+                <th>Mức Độ Giảm Chấn</th>
+                <th>Khả Năng Chống Lật</th>
+                <th>Lối Chơi Phù Hợp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dòng Stability (Ổn Định)</strong></td>
+                <td>Đế rộng, bọc nhựa TPU chống vặn xoắn</td>
+                <td>★★★★★</td>
+                <td>Tối đa 360°</td>
+                <td>Lối đánh bền bỉ, di chuyển cường độ cao</td>
+              </tr>
+              <tr>
+                <td><strong>Dòng Cushion (Đệm Khí)</strong></td>
+                <td>Đệm khí giảm chấn kép gót & mũi</td>
+                <td>★★★★★</td>
+                <td>Tiêu chuẩn PRO</td>
+                <td>Lắng nghe khớp gối, hay bật nhảy đập cầu</td>
+              </tr>
+              <tr>
+                <td><strong>Dòng Speed (Tốc Độ)</strong></td>
+                <td>Thiết kế siêu nhẹ, form ôm sát chân</td>
+                <td>★★★★☆</td>
+                <td>Linh hoạt cao</td>
+                <td>Đánh đôi phản tạt, di chuyển nhanh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS SECTION ================= -->
+    <section class="shoes-reviews-wrapper">
+      <div class="shoes-reviews-container">
+        <div class="reviews-header">
+          <span class="badge-tech-light">COMMUNITY FEEDBACK</span>
+          <h2>Đánh Giá Từ Lông Thủ Đà Nẵng</h2>
+          <p>
+            Trải nghiệm thực tế từ những khách hàng đã tin tưởng lựa chọn dịch
+            vụ của Badminton Pro Lab.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Mới mua đôi Yonex Eclipsion Z3 ở shop, mang ra sân test thử dòng
+              chống lật này phê thực sự, bám sân cực tốt không lo trơn trượt.
+              Anh chủ tư vấn size chuẩn xác lắm!"
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">HQ</div>
+              <div>
+                <h4>H. Quân</h4>
+                <span>Lông thủ Hải Châu, Đà Nẵng</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Đã thử dịch vụ đo vòm chân và tư vấn giày ở đây. Shop chuyên
+              nghiệp, có đủ các dòng từ đệm khí đến tốc độ. Mua thêm cuộn quấn
+              cán Yonex xài rất êm tay."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">TM</div>
+              <div>
+                <h4>T. Minh</h4>
+                <span>Đội cầu lông Sơn Trà</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-content">
+              "Đặt lịch thử size trước qua web tới là có giày thử ngay không
+              phải chờ đợi. Giày chính hãng 100%, bảo hành keo đế đầy đủ nên rất
+              yên tâm."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">GH</div>
+              <div>
+                <h4>G. Hưng</h4>
+                <span>Lông thủ Thanh Khê</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA & BACK TO TOP ================= -->
+    <section class="final-cta-wrapper">
+      <!-- Khối CTA chính: Phóng to nhẹ và trượt mượt từ dưới lên -->
+      <div
+        class="final-cta-box animate-on-scroll"
+        style="transform: scale(0.95) translateY(40px); animation-delay: 0.1s"
+      >
+        <div class="cta-content">
+          <span class="badge-tech-light">BADMINTON PRO LAB DA NANG</span>
+          <h2>Sẵn Sàng Nâng Tầm Trải Nghiệm Sân Cầu Của Bạn?</h2>
+          <p>
+            Ghé ngay showroom tại Hải Châu hoặc nhắn tin trực tiếp qua Zalo để
+            nhận tư vấn vợt, giày và dịch vụ đan dây chuẩn thi đấu.
+          </p>
+        </div>
+        <div
+          class="cta-actions animate-on-scroll"
+          style="transform: translateY(20px); animation-delay: 0.25s"
+        >
+          <a href="https://zalo.me" target="_blank" class="btn-cta-zalo"
+            >Nhắn Zalo Tư Vấn</a
+          >
+          <a href="#productModal" class="btn-cta-explore">Xem Sưu Tập 2026</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- backToTopBtn (Kích hoạt mượt qua JS khi cuộn trang) -->
+    <button id="backToTopBtn" class="back-to-top-btn" title="Lên đầu trang">
+      ↑
+    </button>
+    <!-- ================= SITE FOOTER SECTION ================= -->
+    <footer class="site-footer-wrapper">
+      <div class="site-footer-container">
+        <!-- Khung chính -->
+        <div
+          class="footer-glass-box animate-on-scroll"
+          style="animation-delay: 0.1s"
+        >
+          <!-- Cột trái: Thông tin thương hiệu & Trạng thái -->
+          <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+              <div class="logo-accent"></div>
+              <span>BADMINTON PRO MoNo</span>
+            </a>
+            <p class="brand-desc">
+              Trung tâm tư vấn trang thiết bị, đo vòm chân 3D và đan dây vợt cầu
+              lông điện tử chuẩn thi đấu tại Hải Châu, Đà Nẵng.
+            </p>
+
+            <div class="showroom-status-pill">
+              <span class="status-dot"></span>
+              <span>Showroom Mở Cửa: 08:00 - 21:30</span>
+            </div>
+          </div>
+
+          <!-- Cột 1: Sản phẩm -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">SẢN PHẨM</span>
+            <ul>
+              <li><a href="#">Giày Thi Đấu 2026</a></li>
+              <li><a href="#">Vợt Yonex / Victor</a></li>
+              <li><a href="#">Dây Cước & Phụ Kiện</a></li>
+              <li><a href="#">Túi & Balo Chuyên Dụng</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Dịch vụ -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">DỊCH VỤ PRO </span>
+            <ul>
+              <li><a href="#">Đان Dây Điện Tử</a></li>
+              <li><a href="#">Đo Vòm Bàn Chân 3D</a></li>
+              <li><a href="#">Bảo Hành Keo Đế</a></li>
+              <li><a href="#">Thu Cũ Đổi Mới</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối mạng xã hội -->
+          <div class="footer-social-col">
+            <span class="footer-col-title">KẾT NỐI KÊNH SỐ</span>
+            <div class="social-grid">
+              <a href="#" class="social-btn">Facebook OA</a>
+              <a href="#" class="social-btn">Zalo Tư Vấn</a>
+              <a href="#" class="social-btn">TikTok Lab</a>
+              <a href="#" class="social-btn">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh bản quyền dưới cùng (Trễ hơn một chút 0.3s) -->
+        <div
+          class="footer-bottom-bar animate-on-scroll"
+          style="animation-delay: 0.3s"
+        >
+          <p>© 2026 Badminton Pro MoNo Da Nang.</p>
+          <div class="payment-badges">
+            <span>QR Pay</span>
+            <span>Ví MoMo</span>
+            <span>COD Đà Nẵng</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Thư viện WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      // Kích hoạt hiệu ứng chạy khi cuộn tới
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

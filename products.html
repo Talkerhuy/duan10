@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products.css" />
+    <!-- Thư viện Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ================= FLOATING CONTACT WIDGET ================= -->
+    <div class="floating-contact-widget">
+      <!-- Nút Zalo -->
+      <a
+        href="https://zalo.me/0905xxxxxx"
+        target="_blank"
+        class="widget-btn zalo-btn"
+        title="Chat qua Zalo"
+      >
+        <span class="widget-icon-text">Zalo</span>
+        <span class="widget-tooltip">Tư vấn nhanh qua Zalo</span>
+      </a>
+
+      <!-- Nút Gọi Hotline -->
+      <a href="tel:0905xxxxxx" class="widget-btn phone-btn" title="Gọi ngay">
+        <span class="widget-icon-text">Hotline</span>
+        <span class="widget-tooltip">Gọi trực tiếp shop</span>
+      </a>
+    </div>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo shop -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <img src="./img/logo.png" alt="Logo Shop Vợt Cầu Lông" />
+          </span>
+          <span class="logo-text">
+            BADMINTON<span class="logo-accent">.</span>
+          </span>
+        </a>
+        <!-- Nút hamburger  mobile -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html" class="active">Tư vấn vợt</a></li>
+            <li><a href="guide.html">Tư vấn căng dây</a></li>
+            <li><a href="services.html">Quần & áo thể thao</a></li>
+            <li><a href="shoes.html">Giày & phụ kiện</a></li>
+
+            <li><a href="warranty.html">Bảo hành</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- wrap-section -->
+    <section class="wrap-section">
+      <div class="wrap-container">
+        <div class="hero-card animate__animated animate__fadeIn">
+          <!-- Badge tag xuất hiện từ trên xuống -->
+          <span class="badge-tag animate__animated animate__fadeInDown"
+            >HÀNH TRÌNH MỚI</span
+          >
+
+          <!-- Tiêu đề chính với hiệu ứng phóng to/mờ dần -->
+          <h1 class="animate__animated animate__fadeInUp animate__faster">
+            Mở đầu cho sự nghiệp cầu lông
+          </h1>
+
+          <p class="subtitle animate__animated animate__fadeInUp">
+            Những cây vợt phù hợp cho người mới bắt đầu
+          </p>
+
+          <div class="desc-box animate__animated animate__fadeInUp">
+            <p>
+              Cầu lông là môn thể thao tuyệt vời giúp rèn luyện sức khỏe, sự dẻo
+              dai và phản xạ nhanh nhạy.
+            </p>
+            <p>
+              Để có những bước đi đầu tiên thật vững chắc, việc lựa chọn một cây
+              vợt phù hợp với lối đánh và thể lực là vô cùng quan trọng.
+            </p>
+          </div>
+
+          <div
+            class="hero-action animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <a href="#danh-sach-vot" class="btn-explore">Khám phá ngay ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- racket-advice-section -->
+    <section class="racket-advice-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tư vấn chọn vợt theo lối chơi</h2>
+          <p>Lựa chọn cây vợt phù hợp nhất với phong cách thi đấu của bạn</p>
+        </div>
+
+        <div class="leaf-layout-grid">
+          <!-- Thẻ 1 -->
+          <div
+            class="leaf-card leaf-left reveal-item"
+            data-animation="animate__fadeInLeft"
+          >
+            <div class="card-bg-img">
+              <img src="./img/tieuchuan4.png" alt="Vợt thiên công" />
+            </div>
+            <div class="card-overlay"></div>
+            <div class="leaf-content">
+              <span class="big-number">01</span>
+              <div class="text-group">
+                <span class="badge-tag">TẤN CÔNG MẠNH MẼ</span>
+                <h3>Lối chơi thiên công</h3>
+                <p>
+                  Dành cho những cú smash uy lực, áp đảo đối thủ từ sân sau với
+                  độ chính xác và lực sát thương cực cao.
+                </p>
+                <a href="#attack" class="explore-link">Khám phá ngay &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thẻ 2 -->
+          <div
+            class="leaf-card leaf-right reveal-item"
+            data-animation="animate__fadeInRight"
+          >
+            <div class="card-bg-img">
+              <img src="./img/dese.png" alt="Phòng thủ" />
+            </div>
+            <div class="card-overlay"></div>
+            <div class="leaf-content">
+              <span class="big-number">02</span>
+              <div class="text-group">
+                <span class="badge-tag">PHÒNG THỦ</span>
+                <h3>Phòng thủ & Phản tạt</h3>
+                <p>
+                  Linh hoạt, xoay sở nhanh trên lưới và điều tiết nhịp độ trận
+                  đấu mượt mà.
+                </p>
+                <a href="#defense" class="explore-link">Khám phá ngay &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thẻ 3 -->
+          <div
+            class="leaf-card leaf-left leaf-third reveal-item"
+            data-animation="animate__fadeInLeft"
+          >
+            <div class="card-bg-img">
+              <img src="./img/tieuchuan5.png" alt="Toàn diện" />
+            </div>
+            <div class="card-overlay"></div>
+            <div class="leaf-content">
+              <span class="big-number">03</span>
+              <div class="text-group">
+                <span class="badge-tag">TOÀN DIỆN</span>
+                <h3>Công thủ toàn diện</h3>
+                <p>
+                  Cân bằng tốt, linh hoạt tối ưu cho cả người mới bắt đầu lẫn
+                  người chơi phong trào.
+                </p>
+                <a href="#balanced" class="explore-link"
+                  >Khám phá ngay &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- racket-specs-section-->
+    <section class="racket-specs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Thông số kỹ thuật cốt lõi của vợt</h2>
+          <p>
+            Hiểu rõ các thông số để chọn được cây vợt chuẩn xác nhất với thể lực
+          </p>
+        </div>
+
+        <div class="specs-grid">
+          <!-- Thông số 1 -->
+          <div class="spec-card reveal-item" data-animation="animate__fadeInUp">
+            <div class="spec-icon">⚖️</div>
+            <div class="spec-content">
+              <span class="spec-tag">TRỌNG LƯỢNG (U)</span>
+              <h3>Ký hiệu 3U, 4U, 5U</h3>
+              <p>
+                Số U càng lớn thì vợt càng nhẹ. <strong>4U</strong> là mức phổ
+                biến nhất (dễ xoay sở).
+              </p>
+              <div class="spec-detail-expand">
+                <p>
+                  👉 <strong>Gợi ý chọn:</strong> <br />•
+                  <strong>5U (75-79g):</strong> Phụ nữ, trẻ em, lực tay yếu.
+                  <br />• <strong>4U (80-84g):</strong> Đa số người chơi phong
+                  trào. <br />• <strong>3U (85-89g):</strong> Nam có lực tay
+                  tốt, VĐV.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông số 2 -->
+          <div
+            class="spec-card reveal-item"
+            data-animation="animate__fadeInUp"
+            style="animation-delay: 0.2s"
+          >
+            <div class="spec-icon">⚡</div>
+            <div class="spec-content">
+              <span class="spec-tag">ĐỘ CỨNG ĐŨA VỢT</span>
+              <h3>Dẻo – Trung bình – Cứng</h3>
+              <p>
+                Thân dẻo giúp trợ lực tốt cho người mới; thân cứng đòi hỏi lực
+                tay mạnh.
+              </p>
+              <div class="spec-detail-expand">
+                <p>
+                  👉 <strong>Gợi ý chọn:</strong> <br />•
+                  <strong>Thân dẻo:</strong> Trợ lực tốt, đỡ mỏi tay, hợp người
+                  mới. <br />• <strong>Thân cứng:</strong> Tốc độ về vợt nhanh,
+                  dồn lực chính xác cao cho tay khỏe.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông số 3 -->
+          <div
+            class="spec-card reveal-item"
+            data-animation="animate__fadeInUp"
+            style="animation-delay: 0.4s"
+          >
+            <div class="spec-icon">🎯</div>
+            <div class="spec-content">
+              <span class="spec-tag">ĐIỂM CÂN BẰNG</span>
+              <h3>Nặng đầu & Cân bằng</h3>
+              <p>
+                Xác định trọng tâm vợt nằm ở đâu để hỗ trợ tấn công hoặc phòng
+                thủ.
+              </p>
+              <div class="spec-detail-expand">
+                <p>
+                  👉 <strong>Gợi ý chọn:</strong> <br />•
+                  <strong>Nặng đầu (>295mm):</strong> Chuyên đập cầu, tấn công
+                  uy lực. <br />• <strong>Cân bằng (285-290mm):</strong> Công
+                  thủ toàn diện, linh hoạt.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông số 4 -->
+          <div
+            class="spec-card reveal-item"
+            data-animation="animate__fadeInUp"
+            style="animation-delay: 0.6s"
+          >
+            <div class="spec-icon">🛡️</div>
+            <div class="spec-content">
+              <span class="spec-tag">SỨC CHỊU LỰC</span>
+              <h3>Mức căng tối đa (lbs)</h3>
+              <p>
+                Khả năng chịu lực tối đa của khung khi đan lưới để tránh nứt
+                gãy.
+              </p>
+              <div class="spec-detail-expand">
+                <p>
+                  👉 <strong>Gợi ý chọn:</strong> <br />•
+                  <strong>Mức 10 - 10.5kg:</strong> Phù hợp đa số người chơi
+                  phong trào. <br />• <strong>Mức > 11kg:</strong> Dành cho
+                  người chơi trình độ cao, lực tay mạnh.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- leaf-shape-section -->
+    <section class="leaf-shape-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Phân khúc giá & Dòng vợt tiêu biểu</h2>
+          <p>
+            Khám phá các tầm giá được thiết kế trong khung hình chiếc lá độc đáo
+          </p>
+        </div>
+
+        <div class="leaf-shape-grid">
+          <!-- Mẫu 1: Dưới 1.5 triệu -->
+          <div class="leaf-box reveal-item" data-animation="animate__fadeInUp">
+            <div class="leaf-bg">
+              <img src="./img/tieuchuan3.png" alt="Phổ thông" />
+            </div>
+            <div class="leaf-overlay"></div>
+            <div class="leaf-box-content">
+              <span class="badge-tag">DƯỚI 1.5 TRIỆU</span>
+              <h3>Phân khúc phổ thông</h3>
+              <p>
+                Dành cho học sinh, sinh viên và người mới bắt đầu làm quen với
+                cầu lông.
+              </p>
+              <a href="#" class="explore-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Mẫu 2: 1.5 - 3 triệu -->
+          <div
+            class="leaf-box reveal-item"
+            data-animation="animate__fadeInUp"
+            style="animation-delay: 0.2s"
+          >
+            <div class="leaf-bg">
+              <img src="./img/tieuchuan1.png" alt="Tầm trung" />
+            </div>
+            <div class="leaf-overlay"></div>
+            <div class="leaf-box-content">
+              <span class="badge-tag">1.5 - 3 TRIỆU</span>
+              <h3>Tầm trung phong trào</h3>
+              <p>
+                Cân bằng tốt, độ bền cao và tích hợp nhiều công nghệ hiện đại.
+              </p>
+              <a href="#" class="explore-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Mẫu 3: Trên 3 triệu -->
+          <div
+            class="leaf-box reveal-item"
+            data-animation="animate__fadeInUp"
+            style="animation-delay: 0.4s"
+          >
+            <div class="leaf-bg">
+              <img src="./img/tieuchuan2.png" alt="Cao cấp" />
+            </div>
+            <div class="leaf-overlay"></div>
+            <div class="leaf-box-content">
+              <span class="badge-tag">TRÊN 3 TRIỆU</span>
+              <h3>Cao cấp chuyên nghiệp</h3>
+              <p>
+                Dành cho vận động viên và người có lực cổ tay khỏe, tối ưu sức
+                mạnh.
+              </p>
+              <a href="#" class="explore-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- racket-comparison-section -->
+    <section class="racket-comparison-section">
+      <div class="container-wide">
+        <div class="section-header">
+          <h2>Bảng so sánh nhanh các dòng vợt nổi tiếng</h2>
+          <p>
+            Đối chiếu trực quan đặc điểm các dòng vợt chủ lực trên thị trường
+            hiện nay
+          </p>
+        </div>
+
+        <div
+          class="comparison-table-wrapper reveal-item"
+          data-animation="animate__fadeInUp"
+        >
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Thương hiệu / Dòng</th>
+                <th>Lối chơi sở trường</th>
+                <th>Trọng lượng phổ biến</th>
+                <th>Đặc điểm nổi bật</th>
+                <th>Đối tượng phù hợp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge yonex">Yonex Astrox</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Tấn công dồn dập, đập cầu uy lực
+                </td>
+                <td data-label="Trọng lượng phổ biến">3U, 4U (Nặng đầu)</td>
+                <td data-label="Đặc điểm nổi bật">
+                  Công nghệ Rotational Generator System trợ lực cực tốt cho cú
+                  smash.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Người có lực tay khá, thích tấn công.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge lining">Lining Aeronaut</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Tốc độ, phản tạt nhanh trên lưới
+                </td>
+                <td data-label="Trọng lượng phổ biến">
+                  4U, 5U (Cân bằng/Hơi nặng đầu)
+                </td>
+                <td data-label="Đặc điểm nổi bật">
+                  Thiết kế rãnh thoát khí giảm cản gió, vung vợt siêu tốc độ.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Lối đánh nhanh, linh hoạt, đánh đôi.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge victor">Victor Thruster</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Uy lực toàn diện, công thủ sắc bén
+                </td>
+                <td data-label="Trọng lượng phổ biến">
+                  3U, 4U (Cứng, đầm tay)
+                </td>
+                <td data-label="Đặc điểm nổi bật">
+                  Khung vợt chịu lực cao, ổn định mặt vợt khi va chạm cầu mạnh.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Người chơi phong trào nâng cao, bán chuyên.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge yonex">Yonex Nanoray</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Phòng thủ, điều cầu, phản tạt
+                </td>
+                <td data-label="Trọng lượng phổ biến">4U, 5U (Nhẹ, dẻo)</td>
+                <td data-label="Đặc điểm nổi bật">
+                  Khả năng xoay sở cực nhanh, linh hoạt trong mọi tình huống
+                  gấp.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Người mới chơi, người thích điều tiết nhịp độ.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge mizuno">Mizuno Fortius</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Kiểm soát cầu, công thủ toàn diện
+                </td>
+                <td data-label="Trọng lượng phổ biến">3U, 4U (Cân bằng)</td>
+                <td data-label="Đặc điểm nổi bật">
+                  Vật liệu carbon cao cấp Nhật Bản, độ bền siêu khủng và bền bỉ.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Người chơi thích độ đầm chắc và bền bỉ cao.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge apacs">Apacs Feather Weight</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Siêu nhẹ, phòng thủ phản tạt
+                </td>
+                <td data-label="Trọng lượng phổ biến">6U, 7U (Cực nhẹ)</td>
+                <td data-label="Đặc điểm nổi bật">
+                  Trọng lượng siêu nhẹ giúp xoay chuyển cổ tay linh hoạt tối đa.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Người chơi thủ bền, người mới tập và nữ giới.
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Thương hiệu / Dòng">
+                  <span class="brand-badge kumpoo">Kumpoo Power Control</span>
+                </td>
+                <td data-label="Lối chơi sở trường">
+                  Toàn diện, dễ chơi, trợ lực tốt
+                </td>
+                <td data-label="Trọng lượng phổ biến">4U (Dẻo / Trung bình)</td>
+                <td data-label="Đặc điểm nổi bật">
+                  Giá thành cực kỳ dễ tiếp cận, thân vợt trợ lực cực tốt cho tay
+                  yếu.
+                </td>
+                <td data-label="Đối tượng phù hợp">
+                  Học sinh, sinh viên, người chơi phong trào phổ thông.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!--voucher-list-section -->
+    <section class="voucher-list-section">
+      <div class="container">
+        <!-- Tiêu đề: Thả nhẹ từ trên xuống -->
+        <h2
+          class="voucher-title animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          🔥 Kho Mã Ưu Đãi Cầu Lông Độc Quyền
+        </h2>
+        <div class="voucher-grid">
+          <!-- Voucher 1: Bay từ trái sang -->
+          <div
+            class="voucher-card animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="voucher-badge">HOT</div>
+            <div class="voucher-left">
+              <span class="v-type">GIẢM NGAY</span>
+              <strong class="v-val">15%</strong>
+              <span class="v-sub">Đơn từ 2 ống</span>
+            </div>
+            <div class="voucher-right">
+              <div class="voucher-info">
+                <h4>Ưu Đãi Vợt & Cầu Lông</h4>
+                <p>Áp dụng cho tất cả các dòng ống cầu tiêu chuẩn.</p>
+                <div class="voucher-limit">HSD: 30/10/2026</div>
+              </div>
+              <button class="voucher-btn" onclick="copyCode('CAULONG15', this)">
+                <span>Sao chép mã</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Voucher 2: Phóng to nhẹ từ dưới lên -->
+          <div
+            class="voucher-card animate-on-scroll"
+            style="
+              transform: scale(0.9) translateY(40px);
+              animation-delay: 0.3s;
+            "
+          >
+            <div class="voucher-badge free">FREESHIP</div>
+            <div class="voucher-left freeship">
+              <span class="v-type">VẬN CHUYỂN</span>
+              <strong class="v-val">0Đ</strong>
+              <span class="v-sub">Toàn quốc</span>
+            </div>
+            <div class="voucher-right">
+              <div class="voucher-info">
+                <h4>Miễn Phí Vận Chuyển</h4>
+                <p>Đơn hàng phụ kiện và cầu lông từ 300K.</p>
+                <div class="voucher-limit">HSD: 15/11/2026</div>
+              </div>
+              <button
+                class="voucher-btn"
+                onclick="copyCode('FREESHIP300', this)"
+              >
+                <span>Sao chép mã</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Voucher 3: Bay từ phải sang -->
+          <div
+            class="voucher-card animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.4s"
+          >
+            <div class="voucher-badge">SUPER SALE</div>
+            <div class="voucher-left combo">
+              <span class="v-type">COMBO</span>
+              <strong class="v-val">50K</strong>
+              <span class="v-sub">Giảm trực tiếp</span>
+            </div>
+            <div class="voucher-right">
+              <div class="voucher-info">
+                <h4>Combo Vợt & Cầu Lông</h4>
+                <p>Dành riêng cho khách hàng mua trọn bộ combo.</p>
+                <div class="voucher-limit">HSD: Không giới hạn</div>
+              </div>
+              <button class="voucher-btn" onclick="copyCode('COMBO50K', this)">
+                <span>Sao chép mã</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- quiz-section-->
+    <section class="quiz-section">
+      <div class="container-compact">
+        <!-- Tiêu đề: Khối nhỏ thả nhẹ từ trên xuống -->
+        <div
+          class="section-header animate-on-scroll"
+          style="
+            text-align: center;
+            margin-bottom: 40px;
+            transform: translateY(-30px);
+            animation-delay: 0.1s;
+          "
+        >
+          <span class="promo-badge-tag">⚡ Tìm Vợt Chuẩn Xác</span>
+          <h3 style="font-size: 26px; color: #ffffff; font-weight: 800">
+            Trắc nghiệm nhanh chọn vợt phù hợp
+          </h3>
+          <p style="color: #94a3b8; font-size: 14px; margin-top: 8px">
+            Trả lời 3 câu hỏi ngắn để hệ thống gợi ý cây vợt chân ái dành riêng
+            cho bạn.
+          </p>
+        </div>
+
+        <!-- NGUYÊN NGUYÊN KHỐI CARD BẢNG TRẮC NGHIỆM: Bay mượt 100% từ bên trái sang -->
+        <div
+          class="quiz-card-wrapper animate-on-scroll"
+          style="transform: translateX(-50px); animation-delay: 0.25s"
+        >
+          <!-- Bước 1: Lực cổ tay -->
+          <div class="quiz-step active" id="quizStep1">
+            <div class="quiz-progress">Bước 1 / 3</div>
+            <h4>Lực cổ tay của bạn ở mức nào?</h4>
+            <div class="quiz-options">
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(2, 'Lực yếu / Mới chơi')"
+              >
+                Yếu (Tay mới, học sinh)
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(2, 'Lực trung bình')"
+              >
+                Trung bình (Đã đánh quen)
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(2, 'Lực khỏe')"
+              >
+                Khỏe (Tay to, chuyên nghiệp)
+              </button>
+            </div>
+          </div>
+
+          <!-- Bước 2: Lối đánh -->
+          <div class="quiz-step" id="quizStep2">
+            <div class="quiz-progress">Bước 2 / 3</div>
+            <h4>Lối đánh chính của bạn là gì?</h4>
+            <div class="quiz-options">
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(3, 'Thiên công')"
+              >
+                Thiên công (Đập cầu uy lực)
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(3, 'Phòng thủ')"
+              >
+                Phòng thủ (Phản tạt, điều cầu)
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="nextQuizStep(3, 'Toàn diện')"
+              >
+                Toàn diện (Công thủ linh hoạt)
+              </button>
+            </div>
+          </div>
+
+          <!-- Bước 3: Ngân sách -->
+          <div class="quiz-step" id="quizStep3">
+            <div class="quiz-progress">Bước 3 / 3</div>
+            <h4>Ngân sách dự kiến của bạn khoảng bao nhiêu?</h4>
+            <div class="quiz-options">
+              <button class="quiz-opt-btn" onclick="finishQuiz('Dưới 1 triệu')">
+                Dưới 1 triệu đồng
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="finishQuiz('1 - 2.5 triệu')"
+              >
+                Từ 1 đến 2.5 triệu đồng
+              </button>
+              <button
+                class="quiz-opt-btn"
+                onclick="finishQuiz('Trên 2.5 triệu')"
+              >
+                Trên 2.5 triệu đồng (Cao cấp)
+              </button>
+            </div>
+          </div>
+
+          <!-- Kết quả gợi ý -->
+          <div class="quiz-step" id="quizResultStep">
+            <div class="quiz-progress">Hoàn thành! 🎉</div>
+            <h4 style="color: #4ade80">Gợi ý dành riêng cho bạn:</h4>
+            <div class="quiz-result-box">
+              <p id="quizResultText">Đang tổng hợp thông tin...</p>
+            </div>
+            <button class="quiz-restart-btn" onclick="restartQuiz()">
+              Làm lại trắc nghiệm
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= SITE FOOTER SECTION ================= -->
+    <footer class="site-footer-wrapper">
+      <div class="site-footer-container">
+        <!-- Khung chính -->
+        <div
+          class="footer-glass-box animate-on-scroll"
+          style="animation-delay: 0.1s"
+        >
+          <!-- Cột trái: Thông tin thương hiệu & Trạng thái -->
+          <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+              <div class="logo-accent"></div>
+              <span>BADMINTON PRO MoNo</span>
+            </a>
+            <p class="brand-desc">
+              Trung tâm tư vấn trang thiết bị, đo vòm chân 3D và đan dây vợt cầu
+              lông điện tử chuẩn thi đấu tại Hải Châu, Đà Nẵng.
+            </p>
+
+            <div class="showroom-status-pill">
+              <span class="status-dot"></span>
+              <span>Showroom Mở Cửa: 08:00 - 21:30</span>
+            </div>
+          </div>
+
+          <!-- Cột 1: Sản phẩm -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">SẢN PHẨM</span>
+            <ul>
+              <li><a href="#">Giày Thi Đấu 2026</a></li>
+              <li><a href="#">Vợt Yonex / Victor</a></li>
+              <li><a href="#">Dây Cước & Phụ Kiện</a></li>
+              <li><a href="#">Túi & Balo Chuyên Dụng</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Dịch vụ -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">DỊCH VỤ PRO </span>
+            <ul>
+              <li><a href="#">Đان Dây Điện Tử</a></li>
+              <li><a href="#">Đo Vòm Bàn Chân 3D</a></li>
+              <li><a href="#">Bảo Hành Keo Đế</a></li>
+              <li><a href="#">Thu Cũ Đổi Mới</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối mạng xã hội -->
+          <div class="footer-social-col">
+            <span class="footer-col-title">KẾT NỐI KÊNH SỐ</span>
+            <div class="social-grid">
+              <a href="#" class="social-btn">Facebook OA</a>
+              <a href="#" class="social-btn">Zalo Tư Vấn</a>
+              <a href="#" class="social-btn">TikTok Lab</a>
+              <a href="#" class="social-btn">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh bản quyền dưới cùng (Trễ hơn một chút 0.3s) -->
+        <div
+          class="footer-bottom-bar animate-on-scroll"
+          style="animation-delay: 0.3s"
+        >
+          <p>© 2026 Badminton Pro MoNo Da Nang.</p>
+          <div class="payment-badges">
+            <span>QR Pay</span>
+            <span>Ví MoMo</span>
+            <span>COD Đà Nẵng</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Thư viện WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      // Kích hoạt hiệu ứng chạy khi cuộn tới
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

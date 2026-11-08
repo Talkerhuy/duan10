@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="warranty.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ================= FLOATING CONTACT WIDGET ================= -->
+    <div class="floating-contact-widget">
+      <!-- Nút Zalo -->
+      <a
+        href="https://zalo.me/0905xxxxxx"
+        target="_blank"
+        class="widget-btn zalo-btn"
+        title="Chat qua Zalo"
+      >
+        <span class="widget-icon-text">Zalo</span>
+        <span class="widget-tooltip">Tư vấn nhanh qua Zalo</span>
+      </a>
+
+      <!-- Nút Gọi Hotline -->
+      <a href="tel:0905xxxxxx" class="widget-btn phone-btn" title="Gọi ngay">
+        <span class="widget-icon-text">Hotline</span>
+        <span class="widget-tooltip">Gọi trực tiếp shop</span>
+      </a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo shop -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">
+            <img src="./img/logo.png" alt="Logo Shop Vợt Cầu Lông" />
+          </span>
+          <span class="logo-text">
+            BADMINTON<span class="logo-accent">.</span>
+          </span>
+        </a>
+        <!-- Nút hamburger  mobile -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Mở menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Thanh điều hướng -->
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Tư vấn vợt</a></li>
+            <li><a href="guide.html">Tư vấn căng dây</a></li>
+            <li><a href="services.html">Quần & áo thể thao</a></li>
+            <li><a href="shoes.html">Giày & phụ kiện</a></li>
+
+            <li><a href="warranty.html" class="active">Bảo hành</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ================= PROMO & OFFERS SECTION ================= -->
+    <section class="promo-offers-wrapper">
+      <div class="promo-offers-container">
+        <div class="promo-card-main">
+          <div class="promo-badge">ƯU ĐÃI ĐẶC BIỆT THÁNG 11</div>
+
+          <div class="promo-grid">
+            <!-- Cột trái: Thông tin ưu đãi & Bộ đếm ngược (Bay từ trái sang) -->
+            <div
+              class="promo-info-col animate-on-scroll"
+              style="transform: translateX(-40px); animation-delay: 0.1s"
+            >
+              <h2>Combo Nhận Quà Khủng Khi Mua Giày PRO</h2>
+              <p class="promo-sub">
+                Tặng ngay 01 cuộn quấn cán Yonex chính hãng + 01 đôi vớ thể thao
+                Pro dệt 3D cao cấp khi mua bất kỳ đôi giày thi đấu nào trong
+                tuần này.
+              </p>
+
+              <!-- Bộ đếm ngược thời gian -->
+              <div class="countdown-timer">
+                <span class="timer-title">Thời gian còn lại:</span>
+                <div class="timer-boxes">
+                  <div class="t-box">
+                    <span id="days">02</span><label>Ngày</label>
+                  </div>
+                  <div class="t-box">
+                    <span id="hours">14</span><label>Giờ</label>
+                  </div>
+                  <div class="t-box">
+                    <span id="minutes">35</span><label>Phút</label>
+                  </div>
+                  <div class="t-box">
+                    <span id="seconds">50</span><label>Giây</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nút nhận ưu đãi -->
+              <div class="promo-actions">
+                <a href="#shoes-grid" class="btn-claim-promo"
+                  >Săn Ưu Đãi Ngay</a
+                >
+                <div class="voucher-code-box">
+                  <span>Mã giảm 50k: <strong>DANANGPRO</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cột phải: Quà tặng kèm (Bay từ phải sang) -->
+            <div
+              class="promo-gift-col animate-on-scroll"
+              style="transform: translateX(40px); animation-delay: 0.25s"
+            >
+              <div class="gift-item-card">
+                <div class="gift-tag">QUÀ TẶNG KÈM</div>
+                <h4>Bộ Quà Tặng Lông Thủ PRO</h4>
+                <ul>
+                  <li>Cuộn quấn cán Yonex AC102EX (Trị giá 40.000₫)</li>
+                  <li>Vớ thể thao cổ cao chống phồng rộp (Trị giá 85.000₫)</li>
+                  <li>
+                    Miễn phí đo vòm bàn chân & test đệm trực tiếp tại Đà Nẵng
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIP PERKS & VOUCHER SECTION ================= -->
+    <section class="vip-perks-wrapper">
+      <div class="vip-perks-container">
+        <!-- Tiêu đề tổng: Thả nhẹ từ trên xuống -->
+        <div
+          class="perks-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">MEMBER PRIVILEGES</span>
+          <h2>Đặc Quyền Dành Riêng Cho Lông Thủ Đà Nẵng</h2>
+          <p>
+            Cam kết dịch vụ hàng đầu, bảo hành minh bạch và nhiều đặc quyền hấp
+            dẫn khi mua sắm trực tiếp tại showroom.
+          </p>
+        </div>
+
+        <div class="perks-grid">
+          <!-- Đặc quyền 1: Bảo hành keo đế (Bay từ trái sang) -->
+          <div
+            class="perk-card animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="perk-num">01</div>
+            <h3>Bảo Hành Keo Đế 6 Tháng</h3>
+            <p>
+              Miễn phí dán keo, ép đế trọn đời trong 6 tháng đầu tiên sử dụng.
+              Đổi mới 1-1 nếu lỗi từ nhà sản xuất trong 7 ngày.
+            </p>
+            <span class="perk-tag">AN TÂM SỬ DỤNG</span>
+          </div>
+
+          <!-- Đặc quyền 2: Đo vòm chân chuyên sâu (Trượt từ dưới lên) -->
+          <div
+            class="perk-card animate-on-scroll"
+            style="transform: translateY(40px); animation-delay: 0.3s"
+          >
+            <div class="perk-num">02</div>
+            <h3>Đo Vòm Chân & Thử Giày 3D</h3>
+            <p>
+              Hệ thống máy đo độ vòm bàn chân chuyên dụng giúp tư vấn chính xác
+              dòng giày chống lật và đệm khí phù hợp nhất với form chân bạn.
+            </p>
+            <span class="perk-tag">HOÀN TOÀN MIỄN PHÍ</span>
+          </div>
+
+          <!-- Đặc quyền 3: Voucher tích lũy (Bay từ phải sang) -->
+          <div
+            class="perk-card promo-box-card animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.4s"
+          >
+            <div class="perk-num">03</div>
+            <h3>Săn Mã Giảm Giá Độc Quyền</h3>
+            <p>
+              Nhập mã tại quầy hoặc trên web để nhận ưu đãi trực tiếp cho đơn
+              hàng giày và phụ kiện đầu tiên.
+            </p>
+            <div class="voucher-code-pill">
+              <span>Mã: <strong>DNPRO2026</strong></span>
+              <button
+                class="btn-copy-code"
+                onclick="alert('Đã sao chép mã giảm giá!')"
+              >
+                Sao Chép
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INNOVATIVE PROMO & WARRANTY BENTO ================= -->
+    <section class="bento-warranty-wrapper">
+      <div class="bento-warranty-container">
+        <!-- Tiêu đề Bento: Thả nhẹ từ trên xuống -->
+        <div
+          class="bento-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">SYSTEM ASSURANCE</span>
+          <h2>Cam Kết Dịch Vụ & Đặc Quyền Đột Phá</h2>
+        </div>
+
+        <!-- Lưới Bento 4 khối với kích thước và góc nhìn hoàn toàn mới -->
+        <div class="bento-grid-layout">
+          <!-- Khối chính siêu to bên trái (Hero Bento - Bay từ trái sang) -->
+          <div
+            class="bento-card bento-hero animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="bento-tag-status">GÓI BẢO HÀNH PLATINUM</div>
+            <div class="bento-hero-body">
+              <h3>Bảo Hành Keo Đế & Cấu Trúc 180 Ngày</h3>
+              <p>
+                Mọi đôi giày thi đấu xuất kho đều được dán tem bảo chứng. Nếu
+                gặp hiện tượng bung đế hay sút chỉ, mang trực tiếp tới Showroom
+                Hải Châu để được xử lý ép nhiệt công nghệ cao hoàn toàn miễn
+                phí.
+              </p>
+            </div>
+            <div class="bento-tech-specs">
+              <div class="tech-spec-item">
+                <span class="spec-num">1-TO-1</span>
+                <span class="spec-text">Đổi mới trong 7 ngày</span>
+              </div>
+              <div class="tech-spec-item">
+                <span class="spec-num">0₫</span>
+                <span class="spec-text">Phí dán lại keo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khối 2: Đổi mới cũ lấy mới / Trade-in (Trượt từ trên xuống) -->
+          <div
+            class="bento-card bento-small perk-tradein animate-on-scroll"
+            style="
+              transform: translateY(-30px) scale(0.95);
+              animation-delay: 0.3s;
+            "
+          >
+            <div class="bento-mini-label">OFFER ĐẶC BIỆT</div>
+            <h4>Thu Giày Cũ - Trợ Giá Đổi Giày Mới</h4>
+            <p>
+              Hỗ trợ trợ giá lên tới 300.000₫ cho khách hàng mang giày cũ đến
+              nâng cấp các dòng Yonex Z3 hay Victor P9200.
+            </p>
+          </div>
+
+          <!-- Khối 3: Thẻ ưu đãi đan dây (Trượt từ dưới lên) -->
+          <div
+            class="bento-card bento-small perk-stringing animate-on-scroll"
+            style="
+              transform: translateY(30px) scale(0.95);
+              animation-delay: 0.4s;
+            "
+          >
+            <div class="bento-mini-label">PRO SERVICE</div>
+            <h4>Tặng 1 Lần Đan Dây Điện Tử Free</h4>
+            <p>
+              Tặng voucher đan dây 4 nút chuẩnYonex cho lần bảo dưỡng tiếp theo
+              khi chốt đơn giày trong tuần này.
+            </p>
+          </div>
+
+          <!-- Khối 4: Dịch vụ Ship Hỏa Tốc Đà Nẵng (Trượt mượt từ dưới lên) -->
+          <div
+            class="bento-card bento-wide perk-shipping animate-on-scroll"
+            style="transform: translateY(40px); animation-delay: 0.5s"
+          >
+            <div class="shipping-content">
+              <h4>Giao Hàng Nhanh 60 Phút Tại Đà Nẵng</h4>
+              <p>
+                Thử size tận nhà nội thành. Không vừa hỗ trợ đổi size ngay lập
+                tức.
+              </p>
+            </div>
+            <div class="shipping-badge-speed">EXPRESS 60M</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SHOWROOM LOCATION & MAP SECTION ================= -->
+    <section class="location-map-wrapper">
+      <div class="location-map-container">
+        <!-- Tiêu đề tổng: Thả nhẹ từ trên xuống -->
+        <div
+          class="location-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">SHOWROOM DA NANG</span>
+          <h2>Ghé Trực Tiếp Trải Nghiệm Sản Phẩm</h2>
+        </div>
+
+        <div class="location-grid-layout">
+          <!-- Cột thông tin chi tiết bên trái (Bay từ trái sang) -->
+          <div
+            class="location-info-card animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="info-block">
+              <h3>BADMINTON PRO NoMo</h3>
+              <p class="address-text">
+                Số 55 Nguyễn Bính Khiêm, Phường Nam Dương, Quận Hải Châu, Thành
+                phố Đà Nẵng.
+              </p>
+            </div>
+
+            <div class="info-details-grid">
+              <div class="detail-box">
+                <span class="detail-label">GIỜ MỞ CỬA</span>
+                <span class="detail-value"
+                  >08:00 - 21:30 (Thứ 2 - Chủ Nhật)</span
+                >
+              </div>
+              <div class="detail-box">
+                <span class="detail-label">HOTLINE & ZALO</span>
+                <span class="detail-value">0905.xxx.xxx</span>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a
+                href="https://maps.google.com/?q=55+Nguyen+Binh+Khiem+Hai+Chau+Da+Nang"
+                target="_blank"
+                class="btn-map-directions"
+                >Mở Bản Đồ Google Maps</a
+              >
+            </div>
+          </div>
+
+          <!-- Cột khung bản đồ bên phải (Bay từ phải sang) -->
+          <div
+            class="map-frame-card animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.35s"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8015523999997!2d108.2177!3d16.0678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218305d214a19%3A0x13d6a6a4a6e4d2a!2zNTUgTmd1eeG7hW4gQsOsbmggS2hpw6ptLCBOYW0gROGawqFuZywgSGFpIENoYXUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2svn!4v1700000000000!5m2!1sen!2svn"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WARRANTY CHECK & VIP TIERS SECTION ================= -->
+    <section class="warranty-check-wrapper">
+      <div class="warranty-check-container">
+        <!-- Tiêu đề tổng: Thả nhẹ từ trên xuống -->
+        <div
+          class="warranty-check-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">WARRANTY & VIP SYSTEM</span>
+          <h2>Tra Cứu Bảo Hành Điện Tử & Hạng Thành Viên</h2>
+        </div>
+
+        <div class="warranty-check-grid">
+          <!-- Cột trái: Khung tra cứu bảo hành qua SĐT (Bay từ trái sang) -->
+          <div
+            class="check-box-card animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="check-card-head">
+              <span class="check-card-tag">E-WARRANTY LOOKUP</span>
+              <p>
+                Nhập số điện thoại mua hàng để kiểm tra thời hạn bảo hành keo đế
+                và lịch sử căng dây vợt.
+              </p>
+            </div>
+
+            <div class="check-input-group">
+              <input
+                type="tel"
+                class="input-phone-check"
+                placeholder="Nhập số điện thoại của bạn..."
+              />
+              <button
+                class="btn-submit-check"
+                onclick="alert('Đang tra cứu dữ liệu bảo hành...')"
+              >
+                Tra Cứu
+              </button>
+            </div>
+
+            <div class="check-note-box">
+              <span
+                >Cam kết bảo hành keo đế 180 ngày & 1 đổi 1 trong 7 ngày
+                đầu.</span
+              >
+            </div>
+          </div>
+
+          <!-- Cột phải: Bảng hạn mức ưu đãi VIP (Bay từ phải sang) -->
+          <div
+            class="vip-tiers-card animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.35s"
+          >
+            <div class="tier-item">
+              <div class="tier-info">
+                <span class="tier-name">MEMBER PRO</span>
+                <span class="tier-condition">Đơn hàng bất kỳ</span>
+              </div>
+              <span class="tier-benefit">Giảm 5% Phụ Kiện</span>
+            </div>
+
+            <div class="tier-item active-tier">
+              <div class="tier-info">
+                <span class="tier-name">VIP PLATINUM</span>
+                <span class="tier-condition">Tích lũy > 3.000.000₫</span>
+              </div>
+              <span class="tier-benefit">Giảm 10% + Miễn Phí Căng Cước</span>
+            </div>
+
+            <div class="tier-item">
+              <div class="tier-info">
+                <span class="tier-name">DIAMOND LAB</span>
+                <span class="tier-condition">Tích lũy > 8.000.000₫</span>
+              </div>
+              <span class="tier-benefit">Giảm 15% + Thu Cũ Trợ Giá 20%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE-OVER CART DRAWER ================= -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-drawer-header">
+        <h3>Giỏ Hàng Của Bạn</h3>
+        <button class="btn-close-cart" id="btnCloseCart">&times;</button>
+      </div>
+
+      <div class="cart-drawer-body">
+        <!-- Danh sách món hàng trong giỏ -->
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <span class="img-badge">GIÀY</span>
+          </div>
+          <div class="cart-item-info">
+            <span class="cart-item-title"
+              >Yonex Power Cushion Eclipsion Z3</span
+            >
+            <span class="cart-item-spec"
+              >Size: 42 (27.0cm) | Color: White/Slate</span
+            >
+            <div class="cart-item-price-wrap">
+              <span class="cart-item-price">3.250.000₫</span>
+              <div class="qty-control">
+                <button class="qty-btn">-</button>
+                <span class="qty-val">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quà tặng kèm bảo hành -->
+        <div class="cart-gift-box">
+          <span class="gift-tag">ĐẶC QUYỀN ĐÈN XANH</span>
+          <p>
+            Tặng kèm 01 Voucher Căng Cước Điện Tử 0đ + Thẻ Bảo Hành Keo Đế 180
+            Ngày.
+          </p>
+        </div>
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-summary-line">
+          <span>Tạm tính</span>
+          <span class="summary-val">3.250.000₫</span>
+        </div>
+        <div class="cart-summary-line free-ship">
+          <span>Vận chuyển (Nội thành ĐN)</span>
+          <span class="summary-val">MIỄN PHÍ</span>
+        </div>
+        <div class="cart-total-line">
+          <span>Tổng thanh toán</span>
+          <span class="total-val">3.250.000₫</span>
+        </div>
+        <button class="btn-checkout-now">Xác Nhận Đặt Hàng Hỏa Tốc</button>
+      </div>
+    </aside>
+
+    <!-- ================= LUCKY WHEEL MINI GAME SECTION ================= -->
+    <section class="wheel-game-wrapper">
+      <div class="wheel-game-container">
+        <!-- Tiêu đề tổng: Thả nhẹ từ trên xuống -->
+        <div
+          class="wheel-header animate-on-scroll"
+          style="transform: translateY(-30px); animation-delay: 0.1s"
+        >
+          <span class="badge-tech-light">LUCKY REWARD LAB</span>
+          <h2>Vòng Quay May Mắn - Săn Quà Tặng Lông Thủ</h2>
+          <p>
+            Thử vận may mỗi ngày để nhận ngay voucher giảm giá trực tiếp hoặc
+            suất đan dây điện tử miễn phí.
+          </p>
+        </div>
+
+        <div class="wheel-card-main">
+          <!-- Cột trái: Vòng quay 3D (Bay từ trái sang) -->
+          <div
+            class="wheel-visual-side animate-on-scroll"
+            style="transform: translateX(-40px); animation-delay: 0.2s"
+          >
+            <div class="wheel-circle-box" id="spinWheel">
+              <div class="wheel-center-pin">PRO</div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Khung phần thưởng & nút quay (Bay từ phải sang) -->
+          <div
+            class="wheel-action-side animate-on-scroll"
+            style="transform: translateX(40px); animation-delay: 0.35s"
+          >
+            <div class="reward-notice-box" id="rewardNotice">
+              <span class="notice-tag">LƯỢT QUAY SẴN SÀNG</span>
+              <h3>Bấm nút bên dưới để quay thưởng ngay!</h3>
+              <p>
+                Mỗi tài khoản / số điện thoại được tham gia quay thưởng 1 lần
+                mỗi ngày.
+              </p>
+            </div>
+
+            <button class="btn-spin-action" id="btnSpin">
+              BẮT ĐẦU QUAY NGAY
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SITE FOOTER SECTION ================= -->
+    <footer class="site-footer-wrapper">
+      <div class="site-footer-container">
+        <!-- Khung chính -->
+        <div
+          class="footer-glass-box animate-on-scroll"
+          style="animation-delay: 0.1s"
+        >
+          <!-- Cột trái: Thông tin thương hiệu & Trạng thái -->
+          <div class="footer-brand-col">
+            <a href="#" class="footer-logo">
+              <div class="logo-accent"></div>
+              <span>BADMINTON PRO MoNo</span>
+            </a>
+            <p class="brand-desc">
+              Trung tâm tư vấn trang thiết bị, đo vòm chân 3D và đan dây vợt cầu
+              lông điện tử chuẩn thi đấu tại Hải Châu, Đà Nẵng.
+            </p>
+
+            <div class="showroom-status-pill">
+              <span class="status-dot"></span>
+              <span>Showroom Mở Cửa: 08:00 - 21:30</span>
+            </div>
+          </div>
+
+          <!-- Cột 1: Sản phẩm -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">SẢN PHẨM</span>
+            <ul>
+              <li><a href="#">Giày Thi Đấu 2026</a></li>
+              <li><a href="#">Vợt Yonex / Victor</a></li>
+              <li><a href="#">Dây Cước & Phụ Kiện</a></li>
+              <li><a href="#">Túi & Balo Chuyên Dụng</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 2: Dịch vụ -->
+          <div class="footer-links-col">
+            <span class="footer-col-title">DỊCH VỤ PRO </span>
+            <ul>
+              <li><a href="#">Đان Dây Điện Tử</a></li>
+              <li><a href="#">Đo Vòm Bàn Chân 3D</a></li>
+              <li><a href="#">Bảo Hành Keo Đế</a></li>
+              <li><a href="#">Thu Cũ Đổi Mới</a></li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Kết nối mạng xã hội -->
+          <div class="footer-social-col">
+            <span class="footer-col-title">KẾT NỐI KÊNH SỐ</span>
+            <div class="social-grid">
+              <a href="#" class="social-btn">Facebook OA</a>
+              <a href="#" class="social-btn">Zalo Tư Vấn</a>
+              <a href="#" class="social-btn">TikTok Lab</a>
+              <a href="#" class="social-btn">Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh bản quyền dưới cùng (Trễ hơn một chút 0.3s) -->
+        <div
+          class="footer-bottom-bar animate-on-scroll"
+          style="animation-delay: 0.3s"
+        >
+          <p>© 2026 Badminton Pro MoNo Da Nang.</p>
+          <div class="payment-badges">
+            <span>QR Pay</span>
+            <span>Ví MoMo</span>
+            <span>COD Đà Nẵng</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Thư viện WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      // Kích hoạt hiệu ứng chạy khi cuộn tới
+      new WOW().init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
